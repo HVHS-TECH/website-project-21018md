@@ -1,0 +1,85 @@
+/***********************
+/ Foot print animations
+***********************/
+
+@keyframes walking {
+  0%   {visibility: hidden;}
+  100% {visibility: visible;}
+}
+
+#foot1 {
+    position: absolute;
+    right: 0;
+    left: 55%;
+    margin-top: 20rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+#foot2 {
+    position: absolute;
+    right: 0;
+    left: 40%;
+    margin-top: 6rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+}
+#foot3 {
+    position: absolute;
+    right: 0;
+    left: 57%;
+    margin-top: 39rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+#foot4 {
+    position: absolute;
+    right: 0;
+    left: 35%;
+    margin-top: 30rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+#foot5 {
+    position: absolute;
+    right: 0;
+    left: 55%;
+    margin-top: 59rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+#foot6 {
+    position: absolute;
+    right: 0;
+    left: 40%;
+    margin-top: 50rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+/***************************
+/text section
+****************************/
+
+.text {
+    padding: 0.5rem;
+    font-size: 3rem;
+    background-color: #222;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
