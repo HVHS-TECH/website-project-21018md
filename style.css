@@ -10,66 +10,121 @@
 #foot1 {
     position: absolute;
     right: 0;
-    left: 55%;
-    margin-top: 20rem;
-    visibility: hidden;
-    animation: walking linear;
-    animation-timeline: view();
-    animation-range: contain;
-}
-
-#foot2 {
-    position: absolute;
-    right: 0;
-    left: 40%;
+    left: 10%;
     margin-top: 6rem;
     visibility: hidden;
     animation: walking linear;
     animation-timeline: view();
     animation-range: contain;
+    transform: rotate(290deg);
 }
-#foot3 {
+
+#foot2 {
     position: absolute;
     right: 0;
-    left: 57%;
-    margin-top: 39rem;
+    left: 17%;
+    margin-top: 18rem;
     visibility: hidden;
     animation: walking linear;
     animation-timeline: view();
     animation-range: contain;
+    transform: rotate(310deg);
+}
+
+#foot3 {
+    position: absolute;
+    right: 0;
+    left: 28%;
+    margin-top: 13rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+    transform: rotate(320deg);
 }
 
 #foot4 {
     position: absolute;
     right: 0;
-    left: 35%;
-    margin-top: 30rem;
+    left: 34%;
+    margin-top: 27rem;
     visibility: hidden;
     animation: walking linear;
     animation-timeline: view();
     animation-range: contain;
+    transform: rotate(340deg);
 }
 
 #foot5 {
     position: absolute;
     right: 0;
-    left: 55%;
-    margin-top: 59rem;
+    left: 47%;
+    margin-top: 23rem;
     visibility: hidden;
     animation: walking linear;
     animation-timeline: view();
     animation-range: contain;
+    transform: rotate(320deg);
 }
 
 #foot6 {
     position: absolute;
     right: 0;
-    left: 40%;
-    margin-top: 50rem;
+    left: 46%;
+    margin-top: 38rem;
     visibility: hidden;
     animation: walking linear;
     animation-timeline: view();
     animation-range: contain;
+    transform: rotate(320deg);
+}
+
+#foot7 {
+    position: absolute;
+    right: 0;
+    left: 60%;
+    margin-top: 40rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+    transform: rotate(340deg);
+}
+
+#foot8 {
+    position: absolute;
+    right: 0;
+    left: 55%;
+    margin-top: 53rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+    transform: rotate(350deg);
+}
+
+#foot9 {
+    position: absolute;
+    right: 0;
+    left: 68%;
+    margin-top: 63rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+    transform: rotate(5deg);
+}
+
+#foot10 {
+    position: absolute;
+    right: 0;
+    left: 55%;
+    margin-top: 70rem;
+    visibility: hidden;
+    animation: walking linear;
+    animation-timeline: view();
+    animation-range: contain;
+    transform: rotate(5deg);
 }
 
 /***************************
