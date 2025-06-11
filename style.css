@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,25 +8,36 @@ h1 {
 }
 
 ul {
-    width: 100vw;
-    height: 300px;
-    padding: 20px;
+    height: 40rem;
+    width: 100%;
     display: flex;
     gap: 4vw;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    padding: 0;
+    margin: 0;
 }
 
 li {
     text-align: center;
     list-style-type: none;
     background-color: #eee;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 20px;
     scroll-snap-align: center;
-    flex: 0 0 100%;
+    flex: 0 0 50%;
+}
+
+ul::before,
+ul::after {
+    content: "";
+    flex: 0 0 25vw;
 }
 
 img {
-    height: 70%;
+    padding: 2rem;
+    height: 50%;
+    aspect-ratio: 4/2;
 }
