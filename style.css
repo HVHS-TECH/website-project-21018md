@@ -20,7 +20,7 @@ ul {
     width: 100%;
     display: flex;
     gap: 5vw;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
