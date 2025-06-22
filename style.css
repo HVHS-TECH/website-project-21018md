@@ -14,8 +14,13 @@ h2 {
     margin-top: 3rem;
 }
 
+p {
+    color: #ccc;
+    font-size: 50px;
+}
 
-ul {
+
+.carousel {
     height: 25rem;
     width: 100%;
     display: flex;
@@ -29,7 +34,7 @@ ul {
     padding-bottom: 5rem;
 }
 
-li {
+.imgBox {
     text-align: center;
     list-style-type: none;
     background-color: #171A1C;
@@ -40,8 +45,8 @@ li {
     height: 20rem;
 }
 
-ul::before,
-ul::after {
+.carousel::before,
+.carousel::after {
     content: "";
     flex: 0 0 40vw;
 }
