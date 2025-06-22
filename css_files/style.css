@@ -8,6 +8,33 @@
 
 /*************************************************************************************/
 
+body {
+  background-color: #fff;
+}
+
 .navigation {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menu {
+  grid-column: 4/ 5;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.title {
+  margin-left: 8px;
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+}
+
+#item {
+    border: 5px solid black;
+    background-color: #2E3E40;
+    padding: 10px;
 }
