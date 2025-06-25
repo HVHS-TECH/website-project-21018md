@@ -9,7 +9,11 @@
 /*************************************************************************************/
 
 body {
-  background-color: #fff;
+  background-color: #2E3E40;
+}
+
+.landingSection {
+  background-image: url("/images_files/otherVG/land_img.png");
 }
 
 .navigation {
@@ -27,14 +31,43 @@ body {
   margin-left: 60px;
 }
 
-.title {
+.webName {
   margin-left: 8px;
   font-family: "Inter", sans-serif;
   color: #00FF64;
 }
 
 #item {
-    border: 5px solid black;
-    background-color: #2E3E40;
-    padding: 10px;
+  padding-top: 51px;
+  padding-bottom: 44px;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  margin-left: 60px;
+}
+
+.title {
+  margin-top: 221px;
+  line-height: 1;;
+}
+
+.topTitle {
+  font-size: 43px;
+}
+
+.bottomTitle {
+  font-size: 100px;
+}
+
+.info {
+  font-size: 19px;
+  grid-column: 1/ 2;
+  padding-right: 250px;
+  margin-top: 40px;
+}
+
