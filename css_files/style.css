@@ -173,3 +173,27 @@ body {
   box-shadow: #182020 0px 0px 10px 0px;
 }
 
+/*************************************************************************************/
+/* Carousel Section Styles */
+/*************************************************************************************/
+
+.carouselMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 200px;
+}
+
+.carouselHead {
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.carouselBackground {
+  position: absolute;
+  margin-top: 600px;
+  width: 100%;
+  z-index: -1;
+}
