@@ -11,6 +11,15 @@
   margin: 0;
 }
 
+.text {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
 /*************************************************************************************/
 /* Global Styles */
 /*************************************************************************************/
@@ -115,17 +124,17 @@ body {
 /* Dinosaurs Section Styles */
 /*************************************************************************************/
 
-.dinosaurContent {
+.dinosaurMain {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 110px;
+  margin-right: 110px;
   margin-top: 200px;
 }
 
-.dinosaurTitle {
-  margin: 0%;
+.dinosaurText {
+  padding: 0%;
+  padding-top: 10px;
 }
 
 .dinoHead {
@@ -134,22 +143,16 @@ body {
   color: #00FF64;
   grid-column: 1/ 2;
   grid-row: 1/ 2;
-  margin: 0%;
+  padding: 0%;
 }
 
 .dinoDescription {
-  grid-column: 1/ 2;
-  grid-row: 2/ 3;
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-right: 10em;
-}
-
-.dinosaurContent .buttonContainer {
-  grid-column: 1/ 2;
-  grid-row: 3/ 4;
+  padding-right: 5em;
+  margin-top: 50px;
 }
 
 .dinoSelectButton {
@@ -162,9 +165,11 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 40px;
 }
 
 .dinosaurImage {
-  width: 600px;
+  width: 700px;
+  box-shadow: #182020 0px 0px 10px 0px;
 }
 
