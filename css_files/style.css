@@ -11,15 +11,6 @@
   margin: 0;
 }
 
-.text {
-  font-family: "Inter", sans-serif;
-  color: white;
-  font-size: 1.2rem;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-}
-
 /*************************************************************************************/
 /* Global Styles */
 /*************************************************************************************/
@@ -251,4 +242,62 @@ body {
   aspect-ratio: 4/ 2;
   margin-top: 30%;
   width: 90%;
+}
+
+/*************************************************************************************/
+/* Palaeontology Section Styles */
+/*************************************************************************************/
+
+.palaeontologySection {
+  background-image: url("/images_files/dinosaurIMG/palaeontology_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 980px;
+}
+
+.palaeontologyMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-top: 455px;
+}
+
+.palaeoHead {
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  grid-column: 1/ 2;
+  grid-row: 1/ 2;
+  padding: 0%;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.palaeoDescription {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-right: 15em;
+  padding-left: 15em;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.palaeoButtonContainer {
+  text-align: center;
+}
+
+.palaeoButton {
+  background-color: #00FF64;
+  color: #2E3E40;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 70px;
 }
