@@ -7,6 +7,23 @@
         <link rel="stylesheet" href="css_files/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
 
+        <!---------------Scripts----------------->
+        <script>
+            window.addEventListener('load', () => {
+                const carousel = document.querySelector('.dinosaurCarousel');
+                const tricera = document.querySelector('.tricera');
+
+                if (carousel && tricera) {
+                // Get how far the tricera item is from the carousel start
+                const triceraOffset = tricera.offsetLeft + (tricera.offsetWidth / 2);
+                const scrollTo = triceraOffset - (carousel.clientWidth / 2);
+
+                carousel.scrollLeft = scrollTo;
+                }
+            });
+        </script>
+    
+
     </head>
     <body>
         <!---------------Landing Section----------------->
@@ -55,17 +72,52 @@
                     <h1 class="carouselHead">DINOSAURS</h1>
                 </header>
                 <div class="dinosaurCarousel">
-                    
+                    <div class="pachy">
+                        <li class="dinoCarouselItem"><img class="carouselIMG" alt="Pachycephalosaurus" src="./images_files/dinosaursVG/pachy.svg"></li>
+                        <h2>PACHYCEPHALOSAURUS</h2>
+                    </div>
+                    <div class="trex">
+                        <li class="dinoCarouselItem"><img class="carouselIMG" alt="Tyranosaurus Rex" src="./images_files/dinosaursVG/trex.svg"></li>
+                        <h2>TYRANOSAURUS REX</h2>
+                    </div>
+                    <div class="tricera">
+                        <li class="dinoCarouselItem"><img class="carouselIMG" alt="Triceratops" src="./images_files/dinosaursVG/triceratops.svg"></li>
+                        <h2>TRICERATOPS</h2>
+                    </div>
+                    <div class="raptor">
+                        <li class="dinoCarouselItem"><img class="carouselIMG" alt="Velociraptor" src="./images_files/dinosaursVG/raptor.svg"></li>
+                        <h2>VELOCIRAPTOR</h2>
+                    </div>
+                    <div class="diplo">
+                        <li class="dinoCarouselItem"><img class="carouselIMG" alt="Diplodocus" src="./images_files/dinosaursVG/diplo.svg"></li>
+                        <h2>DIPLIDOCUS</h2>
+                    </div>
+                    <div class="ankylo">
+                        <li class="dinoCarouselItem"><img class="carouselIMG" alt="Ankylosaurus" src="./images_files/dinosaursVG/ankylo.svg"></li>
+                        <h2>ANKYLOSAURUS</h2>
+                    </div>
                 </div>
                 <img class="carouselBackground" alt="Earth vector graphic" src="./images_files/environmentVG/mesozoicEarth.svg">
             </main>
         </div>    
             
-        <!---
-        <section class="text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error excepturi nemo eligendi laboriosam impedit tempora? Nulla commodi quod ratione aperiam a quas deserunt quasi facere rerum repudiandae, culpa dolore exercitationem itaque nostrum inventore. Atque aperiam error a eligendi quas distinctio, reprehenderit architecto nostrum possimus aliquid iste quisquam autem quibusdam similique alias dicta labore suscipit veniam sint cupiditate quam. Deleniti nihil porro officiis aperiam iusto dignissimos voluptatum consequuntur debitis sequi sed quia a doloremque non, mollitia, est quod accusantium possimus modi error qui labore quae minima esse! Soluta commodi eaque minus dolor error similique. Blanditiis quas harum facilis repellendus magni corrupti molestiae officia exercitationem, omnis, quae architecto iure modi ad quibusdam error provident mollitia ut totam in vitae, at praesentium amet suscipit. Recusandae ipsum eligendi libero eos beatae quam at, odit nostrum, tempora similique fugiat esse quae amet consequuntur? Dolorem vel consequuntur totam a aliquid sapiente eveniet facere exercitationem, praesentium, officiis earum. Minima ea quasi, ab illum labore dolor commodi culpa ex repudiandae alias fugiat dignissimos. Unde explicabo ut quas odit sunt doloribus ducimus aut obcaecati, reiciendis a aliquid temporibus, repudiandae repellendus fuga praesentium? Unde, quos. Nemo inventore, sit repellendus animi optio vitae soluta ab labore illum, dolorem eum alias deserunt, aspernatur quae quo doloribus nam aliquam earum incidunt in mollitia veritatis dolor tempore natus. Ducimus tenetur error sunt corporis ab nostrum accusantium cumque voluptatum, aperiam vero iure incidunt quis vel. Molestiae laborum eligendi impedit amet distinctio maiores saepe sapiente suscipit vel in, quibusdam cumque veniam omnis eaque exercitationem nihil quas nulla laudantium? Illum labore rerum at placeat, deserunt dolores, iure consectetur iusto hic nobis ipsum dignissimos aperiam magnam facilis eaque sequi officiis error, numquam inventore asperiores veritatis dolorum. Vitae, corporis molestias praesentium ratione aliquam doloremque dicta expedita inventore laudantium delectus tempora temporibus tempore blanditiis enim molestiae quas natus rem saepe? Nobis magni eius doloribus consectetur pariatur omnis, hic, iusto facere in accusamus repellendus quam nam dolor, nisi perferendis. Ullam iste saepe reiciendis incidunt. Cum veniam pariatur, unde dolores quisquam inventore minus corporis eaque modi qui consequatur voluptatum iusto, voluptatibus velit harum. A, aliquam provident est fuga tenetur vitae cum dolores vel quod quo quia impedit, deserunt adipisci iste quidem aut. Accusantium nihil, corrupti molestias obcaecati est incidunt quisquam libero ipsa. Eaque ab placeat repellat maxime sed, sequi quisquam ducimus eos, nemo commodi, facere perferendis nostrum aliquam! Fugiat eum non quod atque optio rerum laudantium ipsa sunt accusantium error voluptas ad corporis vero nesciunt exercitationem eaque corrupti ut provident, delectus, magnam nobis quis animi maxime enim. Minus harum eveniet dolorum perferendis at saepe asperiores iste officiis aut labore, similique laboriosam, dolores quidem sed blanditiis cupiditate nemo nam voluptatem soluta qui natus? Nemo eos nostrum sint repellat impedit error quaerat, odio maiores numquam incidunt animi sunt in vitae qui, nam pariatur beatae? Eum deleniti, sapiente omnis maxime debitis beatae at ullam doloremque sed alias ad non tempora quaerat odio repellendus voluptas odit ipsa? Voluptate maiores tempore doloremque obcaecati aliquam, vel delectus omnis possimus voluptas consectetur, animi porro. Odio maxime ad ipsa consequuntur delectus ut nulla saepe ducimus molestiae iste, repudiandae expedita sequi laudantium. Fugiat amet, ullam, voluptatem neque praesentium veniam quo voluptas ipsa debitis obcaecati accusantium earum, est delectus officiis. Eos odio asperiores consequatur unde dolorem obcaecati id aspernatur similique deleniti consequuntur. Veritatis impedit, fuga culpa ab nihil quod hic, modi sapiente obcaecati ratione, cupiditate facere. Veniam voluptate deleniti ipsum officia quia, voluptatem dolore exercitationem sed recusandae corporis adipisci, voluptatibus ut, autem vero delectus dolorum nihil illum! Optio earum omnis itaque voluptates corporis quidem cupiditate facere alias laboriosam. Est consectetur quisquam adipisci numquam pariatur accusamus voluptatibus expedita deleniti. Temporibus sint maxime magni non natus exercitationem dolor id quo, laboriosam sapiente et, necessitatibus, neque ut! Assumenda aliquam aliquid non minima quibusdam facilis at modi, fuga sit consequuntur doloremque accusamus error quas, beatae porro, incidunt dolores velit labore excepturi optio? Unde, itaque distinctio. Similique aliquam eos consequatur quas facilis non quasi quibusdam saepe praesentium placeat inventore sint soluta ea optio dolorem perferendis, eum pariatur nisi cupiditate. Alias velit minima rerum quod assumenda eligendi nisi unde autem reiciendis sapiente dolore commodi provident eos, in sequi possimus blanditiis magni tenetur dolor veritatis. Illum, sequi possimus laboriosam numquam asperiores similique ipsam quae delectus necessitatibus incidunt nam exercitationem! Facere repellendus debitis quia iste repellat quas, vel rem itaque tempora provident fugiat architecto eos neque, nulla a aliquid dolores accusamus praesentium id est. Totam quia ad delectus ipsa temporibus? Cumque similique hic, natus esse porro fugiat sequi maxime, soluta aut aliquam vel quidem iusto ratione autem voluptatibus, alias dolor! Cum laudantium eius ducimus! Quis doloribus velit, maiores eaque numquam sapiente quas culpa voluptate at illo accusantium dignissimos magnam officiis error ullam tempora, distinctio in minima vel enim commodi! Nisi, facere placeat reprehenderit quod, expedita rerum optio sapiente vero itaque enim natus impedit quas inventore? Cumque harum temporibus dicta veritatis!
-        </section>
-    -->
+        <!---------------Palaeontology Section----------------->
+        <div class="palaeontologySection">
+            <main class="palaeontologyMain">
+                <header class="palaeontologyTitle">
+                    <h1 class="palaeoHead">THIER REMNANTS</h1>
+                </header>
+                <p class="palaeoDescription">
+                    Palaeontology is the study of ancient living organisms through fossils. Fossils are the preserved remains or traces of once-living creatures, such as bones, shells, DNA, or even footprints. Although old, these special rocks have allowed us to see what Earth was like during prehistoric times.
+                </p>
+                <div class="palaeoButtonContainer">
+                    <button class="palaeoButton" alt="Palaeontology page link">Palaeontology --></button>
+                </div>
+                <img class="palaeoBackground" alt="Palaeontology background image" src="./images_files/dinosaurIMG/palaeontology_img.jpg">
+            </main>
+        </div>
+            
+                
 
 
 

@@ -180,8 +180,13 @@ body {
 .carouselMain {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  margin-top: 200px;
+  grid-template-rows: 200px, 1fr;
+  margin-top: 300px;
+}
+
+.carouselTitle {
+  margin: 0%;
+  padding: 0%;
 }
 
 .carouselHead {
@@ -189,11 +194,61 @@ body {
   color: #00FF64;
   font-size: 4rem;
   text-align: center;
+  margin: 0%;
+  padding: 0%;
 }
 
 .carouselBackground {
   position: absolute;
-  margin-top: 600px;
+  margin-top: 450px;
   width: 100%;
   z-index: -1;
+}
+
+.dinosaurCarousel h2 {
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  margin-top: 48px;
+  font-size: 1.5rem;
+}
+
+.dinosaurCarousel {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin-top: 150px;
+}
+
+.dinoCarouselItem {
+  text-align: center;
+  list-style-type: none;
+  background-color: #171A1C;
+  border-radius: 10px;
+  padding: 20px;
+  scroll-snap-align: center;
+  flex: 0 0 20%;
+  height: 25rem;
+  width: 25rem;
+}
+
+.dinosaurCarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.dinosaurCarousel::before,
+.dinosaurCarousel::after {
+  content: "";
+  flex: 0 0 40vw;
+}
+
+.carouselIMG {
+  aspect-ratio: 4/ 2;
+  margin-top: 30%;
+  width: 90%;
 }
