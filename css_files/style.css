@@ -24,10 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-.testHide {
-  visibility: visible;
-}
-
 /*************************************************************************************/
 /* Footprint Styles */
 /*************************************************************************************/
@@ -41,6 +37,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 
 .footprint1 {
   grid-area: 20/ 14 / 21 / 15;
@@ -59,7 +56,7 @@ body {
 
 .footprint4 {
   grid-area: 20/ 3 / 21 / 4;
-  transform: rotate(250deg);
+  transform: rotate(230deg);
 }
 
 .footprint5 {
@@ -70,6 +67,31 @@ body {
 .footprint6 {
   grid-area: 22/ 1 / 23 / 2;
   transform: rotate(250deg);
+}
+
+.footprint7 {
+  grid-area: 20/ 8 / 21 / 9;
+  transform: rotate(280deg);
+}
+
+.footprint8 {
+  grid-area: 19/ 18 / 20 / 19;
+  transform: rotate(200deg)
+}
+
+.footprint9 {
+  grid-area: 16/ 19 / 17 / 20;
+  transform: rotate(220deg);
+}
+
+.footprint10 {
+  grid-area: 13 / 17 / 14 / 18;
+  transform: rotate(200deg);
+}
+
+.footprint11 {
+  grid-area: 12/ 20 / 13 / 21;
+  transform: rotate(190deg);
 }
 
 /*************************************************************************************/
@@ -163,7 +185,7 @@ body {
 /*************************************************************************************/
 
 .landingSection {
-  background-image: url("/images_files/dinosaurIMG/land_img.jpg");
+  background-image: url("../images_files/dinosaurIMG/land_img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -362,7 +384,7 @@ body {
 /*************************************************************************************/
 
 .palaeontologySection {
-  background-image: url("/images_files/dinosaurIMG/palaeontology_img.jpg");
+  background-image: url("../images_files/dinosaurIMG/palaeontology_img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
