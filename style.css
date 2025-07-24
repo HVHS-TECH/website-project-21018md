@@ -2,6 +2,10 @@
 /* Carousel Section Styles */
 /*************************************************************************************/
 
+.body {
+  background-color: #171A1C;
+}
+
 .carouselMain {
   display: grid;
   grid-template-columns: 1fr;
