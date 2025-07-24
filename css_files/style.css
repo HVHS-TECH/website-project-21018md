@@ -76,7 +76,7 @@ body {
 .dropdown-languages {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: black;
   max-width: 1.6rem;
   min-width: 145px;
   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
@@ -85,7 +85,8 @@ body {
 }
 
 #translate {
-  color: black;
+  color: #00FF64;
+  font-weight: 500;
   padding: 1rem 0rem 1rem 1rem;
   font-family: "Inter", sans-serif;
   text-decoration: none;
@@ -97,15 +98,11 @@ body {
 }
 
 #translate:hover {
-  background-color: rgb(228, 227, 227);
+  background-color: #2E3E40;
 }
 
 .languagesButton:hover .dropdown-languages{
   display: block;
-}
-
-.languages:hover {
-  color: white;
 }
 
 #navItem {
@@ -263,6 +260,10 @@ body {
   margin-top: 150px;
 }
 
+.dinosaurCarousel:hover #arrow{
+  display: block;
+}
+
 .dinoCarouselItem {
   text-align: center;
   list-style-type: none;
@@ -289,6 +290,23 @@ body {
   aspect-ratio: 4/ 2;
   margin-top: 30%;
   width: 90%;
+}
+
+#arrow {
+  position: absolute;
+  z-index: 10;
+  align-self: center;
+  padding-bottom: 60px;
+  display: none;
+  width: 5%;
+}
+
+.leftArrow {
+  left: 1%;
+}
+
+.rightArrow {
+  right: 1%;
 }
 
 /*************************************************************************************/
