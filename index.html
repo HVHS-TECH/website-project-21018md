@@ -5,48 +5,44 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-<script>
-  window.addEventListener('load', () => {
-    var startCarousel = document.querySelector('.tricera');
-    startCarousel.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-  });
-</script>
+    <body>
+        <div class="carouselSecion">
+            <input type="radio" name="position">
+            <input type="radio" name="position">
+            <input type="radio" name="position" checked>
+            <input type="radio" name="position">
+            <input type="radio" name="position">
+            <input type="radio" name="position">
 
-<body>
-<div class="carouselSection">
-    <main class="carouselMain">
-        <header class="carouselTitle">
-            <h1 class="carouselHead">DINOSAURS</h1>
-        </header>
-        <div class="dinosaurCarousel">
-            <div class="pachy">
-                <li class="dinoCarouselItem"><img class="carouselIMG" alt="Pachycephalosaurus" src="./images_files/dinosaursVG/pachy.svg"></li>
-                <h2>PACHYCEPHALOSAURUS</h2>
-            </div>
-            <div class="trex">
-                <li class="dinoCarouselItem"><img class="carouselIMG" alt="Tyranosaurus Rex" src="./images_files/dinosaursVG/trex.svg"></li>
-                <h2>TYRANOSAURUS REX</h2>
-            </div>
-            <div class="tricera">
-                <li class="dinoCarouselItem"><img class="carouselIMG" alt="Triceratops" src="./images_files/dinosaursVG/triceratops.svg"></li>
-                <h2>TRICERATOPS</h2>
-            </div>
-            <div class="raptor">
-                <li class="dinoCarouselItem"><img class="carouselIMG" alt="Velociraptor" src="./images_files/dinosaursVG/raptor.svg"></li>
-                <h2>VELOCIRAPTOR</h2>
-            </div>
-            <div class="diplo">
-                <li class="dinoCarouselItem"><img class="carouselIMG" alt="Diplodocus" src="./images_files/dinosaursVG/diplo.svg"></li>
-                <h2>DIPLIDOCUS</h2>
-            </div>
-            <div class="ankylo">
-                <li class="dinoCarouselItem"><img class="carouselIMG" alt="Ankylosaurus" src="./images_files/dinosaursVG/ankylo.svg"></li>
-                <h2>ANKYLOSAURUS</h2>
-            </div>
+            <main id="carouselMain">
+                <div class="item">
+                    <img src="./image_files/dinosaursVG/ankylo.svg">
+                    <h3 class="name">Ankylosaurus</h3>
+                </div>
+                <div class="item">
+                    <img src="./image_files/dinosaursVG/raptor.svg">
+                    <h3 class="name">Velociraptor</h3>
+                </div>
+                <div class="item">
+                    <img src="./image_files/dinosaursVG/trex.svg">
+                    <h3 class="name">Tyrannosaurus Rex</h3>
+                </div>
+                <div class="item">
+                    <img src="./image_files/dinosaursVG/pachy.svg">
+                    <h3 class="name">Pachycephalosaurus</h3>
+                </div>
+                <div class="item">
+                    <img src="./image_files/dinosaursVG/diplo.svg">
+                    <h3 class="name">Diplodocus</h3>
+                </div>
+                <div class="item">
+                    <img src="./image_files/dinosaursVG/triceratops.svg">
+                    <h3 class="name">Triceratops</h3>
+                </div>
+            </main>
         </div>
-    </main>
-</div>  
-</body>
+    </body>
+
 </html>
 
 
