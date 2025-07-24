@@ -1,3 +1,7 @@
+/*****************************************************/
+/* File: css_files/style.css */
+/*****************************************************/
+
 /*************************************************************************************/
 /* Reset CSS */
 /* Source: https://meyerweb.com/eric/tools/css/reset/ */
@@ -25,10 +29,10 @@ body {
 /*************************************************************************************/
 
 .navigation {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 60px;
-    margin-right: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .changeLanguage {
@@ -61,6 +65,47 @@ body {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-size: 1.6rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-languages {
+  display: none;
+  position: absolute;
+  background-color: white;
+  max-width: 1.6rem;
+  min-width: 145px;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+  z-index: 1;
+  border: #00FF64 5px solid;
+}
+
+#translate {
+  color: black;
+  padding: 1rem 0rem 1rem 1rem;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+#translate:hover {
+  background-color: rgb(228, 227, 227);
+}
+
+.languagesButton:hover .dropdown-languages{
+  display: block;
+}
+
+.languages:hover {
+  color: white;
 }
 
 #navItem {
