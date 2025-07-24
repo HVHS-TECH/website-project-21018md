@@ -24,6 +24,48 @@ body {
   overflow-x: hidden;
 }
 
+.testHide {
+  visibility: visible;
+}
+
+/*************************************************************************************/
+/* Footprint Styles */
+/*************************************************************************************/
+
+.footprintGrid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(50, 1fr);
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: auto;
+}
+
+.footprint1 {
+  grid-area: 20/ 14 / 21 / 15;
+}
+
+.footprint2 {
+  grid-area: 21/ 17 / 22 / 18;
+}
+
+.footprint3 {
+  grid-area: 22/ 5 / 23 / 6;
+}
+
+.footprint4 {
+  grid-area: 20/ 3 / 21 / 4;
+}
+
+.footprint5 {
+  grid-area: 22/ 12 / 23 / 13;
+}
+
+.footprint6 {
+  grid-area: 22/ 1 / 23 / 2;
+}
+
 /*************************************************************************************/
 /* Navigation Styles */
 /*************************************************************************************/
