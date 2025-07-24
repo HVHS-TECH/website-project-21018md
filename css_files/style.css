@@ -44,26 +44,32 @@ body {
 
 .footprint1 {
   grid-area: 20/ 14 / 21 / 15;
+  transform: rotate(250deg);
 }
 
 .footprint2 {
   grid-area: 21/ 17 / 22 / 18;
+  transform: rotate(230deg);
 }
 
 .footprint3 {
   grid-area: 22/ 5 / 23 / 6;
+  transform: rotate(280deg);
 }
 
 .footprint4 {
   grid-area: 20/ 3 / 21 / 4;
+  transform: rotate(250deg);
 }
 
 .footprint5 {
   grid-area: 22/ 12 / 23 / 13;
+  transform: rotate(250deg);
 }
 
 .footprint6 {
   grid-area: 22/ 1 / 23 / 2;
+  transform: rotate(250deg);
 }
 
 /*************************************************************************************/
