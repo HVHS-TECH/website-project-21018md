@@ -38,6 +38,17 @@ body {
   height: auto;
 }
 
+@keyframes walking {
+  0%   {visibility: hidden;}
+  100% {visibility: visible;}
+}
+
+#footprint {
+  visibility: hidden;
+  animation: walking ease-in-out;
+  animation-timeline: view();
+  animation-range: contain;
+}
 
 .footprint1 {
   grid-area: 20/ 14 / 21 / 15;
