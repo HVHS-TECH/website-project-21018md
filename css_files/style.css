@@ -31,7 +31,7 @@ body {
 .footprintGrid {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(50, 1fr);
+  grid-template-rows: repeat(100, 0.5fr);
   position: absolute;
   z-index: -100;
   width: 100%;
@@ -43,66 +43,116 @@ body {
   100% {visibility: visible;}
 }
 
-#footprint {
+.footprint {
   visibility: hidden;
-  animation: walking ease-in-out;
+  animation: walking linear;
   animation-timeline: view();
   animation-range: contain;
 }
 
-.footprint1 {
-  grid-area: 20/ 14 / 21 / 15;
-  transform: rotate(250deg);
-}
-
-.footprint2 {
-  grid-area: 21/ 17 / 22 / 18;
-  transform: rotate(230deg);
-}
-
-.footprint3 {
-  grid-area: 22/ 5 / 23 / 6;
-  transform: rotate(280deg);
-}
-
-.footprint4 {
-  grid-area: 20/ 3 / 21 / 4;
-  transform: rotate(230deg);
-}
-
-.footprint5 {
-  grid-area: 22/ 12 / 23 / 13;
-  transform: rotate(250deg);
-}
-
-.footprint6 {
-  grid-area: 22/ 1 / 23 / 2;
-  transform: rotate(250deg);
-}
-
-.footprint7 {
-  grid-area: 20/ 8 / 21 / 9;
-  transform: rotate(280deg);
-}
-
-.footprint8 {
-  grid-area: 19/ 18 / 20 / 19;
-  transform: rotate(200deg)
-}
-
-.footprint9 {
-  grid-area: 16/ 19 / 17 / 20;
-  transform: rotate(220deg);
-}
-
-.footprint10 {
-  grid-area: 13 / 17 / 14 / 18;
+#footprint1 {
+  grid-area: 21/ 20 / 22 / 21;
   transform: rotate(200deg);
 }
 
-.footprint11 {
-  grid-area: 12/ 20 / 13 / 21;
+#footprint2 {
+  grid-area: 23/ 18 / 24 / 19;
+  transform: rotate(170deg);
+}
+
+#footprint3 {
+  grid-area: 27/ 19 / 28 / 20;
+  transform: rotate(200deg);
+}
+
+#footprint4 {
+  grid-area: 33/ 18 / 34 / 19;
+  transform: rotate(200deg);
+}
+
+#footprint5 {
+  grid-area: 34/ 16 / 35 / 17;
+  transform: rotate(180deg);
+}
+
+#footprint6 {
+  grid-area: 36/ 18 / 37 / 19;
+  transform: rotate(200deg);
+}
+
+#footprint7 {
+  grid-area: 33 / 1 / 34 / 2;
+  transform: rotate(160deg);
+}
+
+#footprint8 {
+  grid-area: 34 / 3 / 35 / 4;
+  transform: rotate(170deg);
+}
+
+#footprint9 {
+  grid-area: 36 / 2 / 37 / 3;
+  transform: rotate(180deg);
+}
+
+#footprint10 {
+  grid-area: 37 / 4 / 38 / 5;
+  transform: rotate(200deg);
+}
+
+#footprint11 {
+  grid-area: 39 / 2 / 40 / 3;
+  transform: rotate(170deg);
+}
+
+#footprint12 {
+  grid-area: 41 / 4 / 42 / 5;
   transform: rotate(190deg);
+}
+
+#footprint13 {
+  grid-area: 90 / 19 / 91 / 20;
+  transform: rotate(230deg);
+}
+
+#footprint14 {
+  grid-area: 91 / 17 / 92 / 18;
+  transform: rotate(210deg);
+}
+
+#footprint15 {
+  grid-area: 93 / 16 / 94 / 17;
+  transform: rotate(240deg);
+}
+
+#footprint16 {
+  grid-area: 94 / 14 / 95 / 15;
+  transform: rotate(210deg);
+}
+
+#footprint17 {
+  grid-area: 95 / 6 / 96 / 7;
+  transform: rotate(170deg);
+}
+
+#footprint18 {
+  grid-area: 96 / 8 / 97/ 9;
+  transform: rotate(140deg);
+}
+
+#footprint19 {
+  grid-area: 98 / 7 / 99 / 8;
+  transform: rotate(150deg);
+}
+
+#footprint20 {
+  grid-area: 99 / 9 / 100 / 10;
+  transform: rotate(180deg);
+}
+
+#footprint20 {
+  grid-area: 94 / 4 / 95 / 5;
+  transform: rotate(180deg);
 }
 
 /*************************************************************************************/
@@ -116,19 +166,19 @@ body {
   margin-right: 60px;
 }
 
-.changeLanguage {
+#changeLanguage {
   grid-column: 3/ 4;
   align-self: center;
   padding-right: 5rem;
   padding-left: 15rem;
 }
 
-.menu {
+#menu {
   grid-column: 4/ 5;
   align-self: center;
 }
 
-.homeButton {
+#homeButton {
   display: flex;
   align-items: center;
   align-self: center;
@@ -165,7 +215,7 @@ body {
   border: #00FF64 5px solid;
 }
 
-#translate {
+.translate {
   color: #00FF64;
   font-weight: 500;
   padding: 1rem 0rem 1rem 1rem;
@@ -178,7 +228,7 @@ body {
   text-align: left;
 }
 
-#translate:hover {
+.translate:hover {
   background-color: #2E3E40;
 }
 
@@ -186,7 +236,7 @@ body {
   display: block;
 }
 
-#navItem {
+.navItem {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -341,7 +391,7 @@ body {
   margin-top: 150px;
 }
 
-.dinosaurCarousel:hover #arrow{
+.dinosaurCarousel:hover .arrow{
   display: block;
 }
 
@@ -373,7 +423,7 @@ body {
   width: 90%;
 }
 
-#arrow {
+.arrow {
   position: absolute;
   z-index: 10;
   align-self: center;
@@ -382,11 +432,11 @@ body {
   width: 5%;
 }
 
-.leftArrow {
+#leftArrow {
   left: 1%;
 }
 
-.rightArrow {
+#rightArrow {
   right: 1%;
 }
 
@@ -556,19 +606,19 @@ body {
   margin-top: 50px;
 }
 
-#footerList {
+.footerList {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#footerSubHead {
+.footerSubHead {
   font-family: "Inter", sans-serif;
   color: #2E3E40;
   font-size: 1.1rem;
 }
 
-#footerLink {
+.footerLink {
   font-family: "Inter", sans-serif;
   color: #457477;
   font-size: 1rem;
@@ -586,11 +636,11 @@ body {
   align-self: flex-end;
 }
 
-.facebook, .instagram, .youtube {
+#facebook, #instagram, #youtube {
   margin-right: 35px;
 }
 
-#social {
+.social {
   cursor: pointer;
 }
 
