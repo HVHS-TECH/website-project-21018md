@@ -36,6 +36,7 @@ body {
   z-index: -100;
   width: 100%;
   height: auto;
+  display: none;
 }
 
 @keyframes walking {
@@ -45,9 +46,9 @@ body {
 
 .footprint {
   visibility: hidden;
-  animation: walking linear;
+  /*animation: walking linear;
   animation-timeline: view();
-  animation-range: contain;
+  animation-range: contain;*/
 }
 
 #footprint1 {
@@ -131,29 +132,35 @@ body {
 }
 
 #footprint17 {
-  grid-area: 95 / 6 / 96 / 7;
-  transform: rotate(170deg);
-}
-
-#footprint18 {
-  grid-area: 96 / 8 / 97/ 9;
-  transform: rotate(140deg);
-}
-
-#footprint19 {
-  grid-area: 98 / 7 / 99 / 8;
+  grid-area: 94 / 3 / 95 / 4;
   transform: rotate(150deg);
 }
 
-#footprint20 {
-  grid-area: 99 / 9 / 100 / 10;
-  transform: rotate(180deg);
+#footprint18 {
+  grid-area: 95 / 5 / 96 / 6;
+  transform: rotate(130deg);
 }
 
-#footprint20 {
-  grid-area: 94 / 4 / 95 / 5;
-  transform: rotate(180deg);
+#footprint19 {
+  grid-area: 96/ 7 / 97 / 8;
+  transform: rotate(150deg);
 }
+
+#footprint20{
+  grid-area: 97 / 6 / 98/ 7;
+  transform: rotate(160deg);
+}
+
+#footprint21 {
+  grid-area: 98 / 8 / 99 / 9;
+  transform: rotate(140deg);
+}
+
+#footprint22 {
+  grid-area: 99 / 7 / 100 / 8;
+  transform: rotate(150deg);
+}
+
 
 /*************************************************************************************/
 /* Navigation Styles */
@@ -166,11 +173,12 @@ body {
   margin-right: 60px;
 }
 
+
 #changeLanguage {
   grid-column: 3/ 4;
   align-self: center;
-  padding-right: 5rem;
-  padding-left: 15rem;
+  justify-self: end;
+  padding-right: 18%;
 }
 
 #menu {
@@ -280,7 +288,7 @@ body {
 .openingInfo {
   font-size: 1.2rem;
   grid-column: 1/ 2;
-  padding-right: 14em;
+  padding-right: 40%;
   margin-top: 2.5rem;
   line-height: 1.3;
   margin-left: 0;
@@ -301,13 +309,13 @@ body {
 .dinosaurText {
   padding: 0%;
   padding-top: 10px;
+  grid-area: 1/ 1 / 2 / 2;
 }
 
 .dinoHead {
   font-size: 4rem;
   font-family: "Inter", sans-serif;
   color: #00FF64;
-  grid-area: 1/ 1 / 2 / 2;
   padding: 0%;
 }
 
@@ -316,7 +324,7 @@ body {
   color: white;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-right: 5em;
+  padding-right: 20%;
   margin-top: 30px;
 }
 
@@ -334,6 +342,7 @@ body {
 }
 
 .dinosaurImage {
+  max-width: 100%;
   width: 100%;
   height: auto;
   box-shadow: #182020 0px 0px 10px 0px;
@@ -476,8 +485,8 @@ body {
   color: white;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: 25%;
+  padding-left: 25%;
   margin-top: 50px;
   text-align: center;
 }
@@ -501,11 +510,12 @@ body {
 
 /*************************************************************************************/
 /* About Section Styles */
+
 /*************************************************************************************/
 
 .aboutUsTopGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 3fr;
   grid-template-rows: 250px 500px 300px;
   margin-left: 60px;
   margin-right: 60px;
@@ -514,29 +524,37 @@ body {
 
 .bigCloud {
   grid-area: 1/ 3 / 2/ 4;
-  margin-left: 30px;
+  margin-left: 5%;
+  margin-right: auto;
+  max-width: 100%;
+  width: 28.5rem;
 }
 
 .pteranodon {
   grid-area: 2/ 3/ 3/ 4;
   margin-top: 100px;
+  justify-self: end;
+  max-width: 100%;
+  width: 45rem;
 }
 
 .smallCloud {
   grid-area: 2/ 1/ 3/ 2;
+  max-width: 100%;
+  width: 22rem;
 }
 
 .aboutUsContent {
   z-index: 2;
   grid-area: 2/ 1 / 4 / 4;
   margin-top: 250px;
-  padding-right: 32em;
-  padding-left: 12em;
+  padding-right: 35%;
+  padding-left: 18%;
 }
 
 .aboutUsBottomGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -547,24 +565,30 @@ body {
   z-index: 2;
   position: relative;
   top: 16px;
+  max-width: 100%;
+  max-height: 80%;
 }
 
 .mountains {
-  grid-area: 1/ 1 /2 / 4;
+  grid-area: 1/ 1 /2 / 3;
   align-self: flex-end;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
   position: relative;
   top: 1px;
+  max-width: 100%;
+  max-height: 50%;
 }
 
 .tree {
-  grid-area: 1/ 3 / 2 / 4;
+  grid-area: 1/ 2 / 2 / 3;
   align-self: flex-end;
+  justify-self: end;
   position: relative;
   top: 16px;
   z-index: 2;
+  max-width: 100%;
 }
 
 .aboutUsHead {
@@ -657,4 +681,46 @@ body {
 .footerDinoLinks li, .footerPalaeoLinks li {
   padding-top: 25px;
 }
+
+/*************************************************************************************/
+/* Media Queries */
+/*************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 768px) {
+
+  .dinosaurMain {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .dinosaurText {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .dinosaurImage {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .dinoDescription {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: left;
+  } 
+
+}*/
 
