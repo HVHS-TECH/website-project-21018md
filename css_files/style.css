@@ -173,6 +173,9 @@ body {
   margin-right: 60px;
 }
 
+#thesaurus {
+  cursor: pointer;
+}
 
 #changeLanguage {
   grid-column: 3/ 4;
@@ -184,6 +187,7 @@ body {
 #menu {
   grid-column: 4/ 5;
   align-self: center;
+  cursor: pointer;
 }
 
 #homeButton {
@@ -198,6 +202,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .languages {
@@ -234,6 +239,7 @@ body {
   border: none;
   width: 100%;
   text-align: left;
+  cursor: pointer;
 }
 
 .translate:hover {
@@ -325,7 +331,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   padding-right: 20%;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .dinoSelectButton {
@@ -338,7 +344,11 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 55px;
+}
+
+.dinoSelectButton:hover {
+  background-color: white;
 }
 
 .dinosaurImage {
@@ -456,28 +466,31 @@ body {
 /*************************************************************************************/
 
 .palaeontologySection {
-  background-image: url("../images_files/dinosaurIMG/palaeontology_img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 975px;
-  margin-top: 410px;
-  padding-top: 250px;
+  margin-top: 430px;
+  height: 950px;
 }
 
 .palaeontologyMain {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  margin-left: 60px;
-  margin-right: 60px;
+  grid-template-rows: 1fr 0.5fr 1fr;
+  background-image: url("../images_files/dinosaurIMG/palaeontology_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.palaeontologyTitle {
+  grid-area: 1/ 1 / 2 / 2;
+  align-self: flex-end;
+  margin-bottom: 10px;
 }
 
 .palaeoHead {
   font-size: 4rem;
   font-family: "Inter", sans-serif;
   color: #00FF64;
-  grid-area: 1/ 1 / 2 / 2;
   padding: 0%;
   text-align: center;
 }
@@ -487,14 +500,15 @@ body {
   color: white;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-right: 20%;
-  padding-left: 20%;
-  margin-top: 50px;
+  padding-right: 25%;
+  padding-left: 25%;
   text-align: center;
+  align-self: center;
 }
 
 .palaeoButtonContainer {
   text-align: center;
+  margin-top: 55px;
 }
 
 .palaeoButton {
@@ -507,7 +521,10 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 50px;
+}
+
+.palaeoButton:hover {
+  background-color: white;
 }
 
 /*************************************************************************************/
@@ -605,7 +622,7 @@ body {
   color: white;
   font-size: 1.5rem;
   line-height: 1.5;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /*************************************************************************************/
@@ -614,7 +631,7 @@ body {
 
 .footerSection {
   background-color: #00FF64;
-  height:260px;
+  height: 260px;
   z-index: -2;
 }
 
@@ -651,6 +668,10 @@ body {
   text-decoration: none;
 }
 
+.footerLink:hover {
+  text-decoration: underline;
+}
+
 .footerTitle {
   grid-area: 1/ 1 / 2 / 3;
 }
@@ -668,6 +689,10 @@ body {
 
 .social {
   cursor: pointer;
+}
+
+.social:hover {
+  width: 15%;
 }
 
 .footerDinoLinks {
@@ -691,10 +716,9 @@ body {
 /* Margins *//* Landing Section*//* Dinosaur Section *//* Carousel Section *//* Palaeontology Section *//* About Us Section *//*Footer Section */
 /*************************************************************************************/
 
-@media screen and (max-width: 1505px) {
+@media screen and (max-width: 1440px) {
 /* Margins */
-  .navigation, .opening,
-  .palaeontologyMain, .aboutUsTopGrid, .aboutUsBottomGrid {
+  .navigation, .opening, .aboutUsTopGrid, .aboutUsBottomGrid {
     margin-left: 55px;
     margin-right: 55px;
   }
@@ -709,10 +733,6 @@ body {
   }
 
   .palaeontologySection {
-    height: 955px;
-  }
-
-  .palaeontologySection {
     margin-top: 415px;
   }
 
@@ -724,8 +744,7 @@ body {
 
 @media screen and (max-width: 1024px) {
 /* Margins */
-  .navigation, .opening,
-  .palaeontologyMain, .aboutUsTopGrid, .aboutUsBottomGrid {
+  .navigation, .opening, .aboutUsTopGrid, .aboutUsBottomGrid {
     margin-left: 45px;
     margin-right: 45px;
   }
@@ -781,13 +800,13 @@ body {
     font-size: 1.2rem;
     line-height: 1.5;
     padding-right: 10%;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .dinoSelectButton {
     font-size: 1.3rem;
     padding: 1.2rem 1.2rem;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
 /* Carousel Section */
@@ -822,9 +841,9 @@ body {
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 115px;
-    background-size: contain;
-    padding-top: 325px;
+    margin: 0px;
+    margin-top: 250px;
+    height: 650px;
   }
 
   .palaeoHead {
@@ -833,13 +852,17 @@ body {
 
   .palaeoDescription {
     font-size: 1.2rem;
-    margin-top: 30px;
+    padding-right: 22%;
+    padding-left: 22%;
+  }
+
+  .palaeoButtonContainer {
+    margin-top: 45px;
   }
 
   .palaeoButton {
     font-size: 1.3rem;
     padding: 1.2rem 1.2rem;
-    margin-top: 30px;
   }
 
 /* About Us Section */
@@ -866,7 +889,7 @@ body {
 @media screen and (max-width: 768px) {
 /* Margins */
   .navigation, .opening,
-  .palaeontologyMain, .aboutUsTopGrid, .aboutUsBottomGrid {
+  .aboutUsTopGrid, .aboutUsBottomGrid {
     margin-left: 35px;
     margin-right: 35px;
   }
@@ -930,16 +953,60 @@ body {
   }
 
 /* Carousel Section */
+  .arrow {
+    width: 10%;
+  }
+
+  #leftArrow {
+    left: 2%;
+  }
+
+  #rightArrow {
+    right: 2%;
+  }
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 0px;
-    padding-top: 325px;
+    height: 500px;
+    margin-top: 120px;
+  }
+
+  .palaeoDescription {
+    padding-right: 10%;
+    padding-left: 10%;
   }
 
 /* About Us Section */
+  .aboutUsTopGrid {
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 250px 500px;
+    margin-bottom: 250px;
+  }
+
+  .aboutUsContent {
+    padding-right: 20%;
+    padding-left: 35px;
+    margin-top: 150px;
+  }
 
 /*Footer Section */
+  .footerDinoLinks, .footerPalaeoLinks {
+    display: none;
+  }
+
+  .footerHead {
+    margin-top: 70px;
+  }
+
+  .footerSocials {
+    grid-area: 1 / 4 / 1 / 6;
+    justify-self: flex-end;
+    margin-top: 70px;
+  }
+
+  .footerSection {
+    height: 230px;
+  }
 
 }
 
