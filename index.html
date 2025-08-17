@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
+        <script src="./javaScript_files/homepage.js"></script>
         <script>
             window.addEventListener('load', () => {
                 const carousel = document.querySelector('.dinosaurCarousel');
@@ -65,12 +66,12 @@
                     <div class="languagesButton">
                         <button id="languages" class="languages">Languages</button>
                         <div id="dropdown-languages" class="dropdown-languages">
-                            <button id="changeEnglish" class="translate">English</button>
+                            <button id="changeEnglish" class="translate" onclick="english()">English</button>
                             <button id="changeSpanish" class="translate">Español</button>
                             <button id="changeFrench" class="translate">Français</button>
                             <button id="changeGerman" class="translate">Deutsch</button>
-                            <button id="changeJapanese" class="translate">日本語</button>
-                            <button id="changeVietnamese" class="translate">Tiếng việt</button>
+                            <button id="changeJapanese" class="translate" onclick="japanese()">日本語</button>
+                            <button id="changeVietnamese" class="translate" onclick="vietnamese()">Tiếng việt</button>
                         </div>
                     </div>
                 </div>
@@ -80,10 +81,10 @@
             </nav>
             <div class="opening">
                 <header class="openingTitle">
-                    <h1 class="top">ENTER THE</h1>
-                    <h1 class="bottom">PREHISTORIC WORLD</h1>
+                    <h1 id="titleTop" class="top">ENTER THE</h1>
+                    <h1 id="titleBottom" class="bottom">PREHISTORIC WORLD</h1>
                 </header>
-                <p class="openingInfo">
+                <p id="openingInfo" class="openingInfo">
                     Travel back to a time long before humans, filled with bizarre creatures and vast landscapes - welcome to the age of dinosaurs!
                 </p>
             </div>
@@ -93,11 +94,11 @@
         <div class="dinosaursSection">
             <div class="dinosaurMain">
                 <div class="dinosaurText">
-                    <h1 class="dinoHead">THE TITANS</h1>
-                    <p class="dinoDescription">
+                    <h1 id="dinoHead" class="dinoHead">THE TITANS</h1>
+                    <p id="dinoDescription" class="dinoDescription">
                         During the Mesozoic Era, over 250 million years ago, Earth was dominated by a group of reptiles known as dinosaurs. From colossal claws to tiny teeth, these creatures ran amok throughout the Triassic, Jurassic, and Cretaceous periods. After the asteroid caused their extinction approximately 66 million years ago, scientific research has let us slowly rediscover their world.
                     </p>
-                    <button class="dinoSelectButton">Dinosaurs --></button>
+                    <button id="dinoSelectButton" class="dinoSelectButton">Dinosaurs --></button>
                 </div>
                 <img class="dinosaurImage" src="./images_files/dinosaurIMG/dinosaur_img.png" alt="A Tyranosaurus Rex walking through a prehistoric forest.">
             </div>

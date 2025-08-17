@@ -49,6 +49,7 @@ body {
   animation: walking linear;
   animation-timeline: view();
   animation-range: contain;
+  max-width: 100%;
 }
 
 #footprint1 {
@@ -718,7 +719,8 @@ body {
 
 @media screen and (max-width: 1440px) {
 /* Margins */
-  .navigation, .opening, .aboutUsTopGrid, .aboutUsBottomGrid {
+  .navigation, .opening, .aboutUsTopGrid, 
+  .aboutUsBottomGrid, .footerMain {
     margin-left: 55px;
     margin-right: 55px;
   }
@@ -744,7 +746,8 @@ body {
 
 @media screen and (max-width: 1024px) {
 /* Margins */
-  .navigation, .opening, .aboutUsTopGrid, .aboutUsBottomGrid {
+  .navigation, .opening, .aboutUsTopGrid, 
+  .aboutUsBottomGrid, .footerMain{
     margin-left: 45px;
     margin-right: 45px;
   }
@@ -785,7 +788,6 @@ body {
 
   .openingInfo {
     font-size: 1.1rem;
-    padding-right: 35%;
     margin-top: 2.5rem;
     line-height: 1.3;
     padding-right: 30%;
@@ -882,21 +884,16 @@ body {
     margin-top: 200px;
   }
 
-/*Footer Section */
+/* Footer Section */
 
 }
 
 @media screen and (max-width: 768px) {
 /* Margins */
   .navigation, .opening,
-  .aboutUsTopGrid, .aboutUsBottomGrid {
+  .aboutUsTopGrid, .aboutUsBottomGrid, .footerMain{
     margin-left: 35px;
     margin-right: 35px;
-  }
-
-  .dinosaurMain {
-    margin-right: 85px;
-    margin-left: 85px;
   }
 
 /* Landing Section*/
@@ -918,7 +915,6 @@ body {
 
   .openingInfo {
     font-size: 1rem;
-    padding-right: 35%;
     margin-top: 1.5rem;
     line-height: 1.3;
     padding-right: 30%;
@@ -926,10 +922,10 @@ body {
 
 /* Dinosaur Section */
   .dinosaurMain {
-    grid-template-rows: 1fr, 2fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-columns: 1fr;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 85px;
+    margin-left: 85px;
     margin-top: 150px;
   }
 
@@ -949,7 +945,7 @@ body {
   } 
 
   .dinoSelectButton {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
 /* Carousel Section */
@@ -1010,4 +1006,164 @@ body {
 
 }
 
+@media screen and (max-width: 425px) {
+/* Margins */
+  .navigation, .opening,
+  .aboutUsTopGrid, .aboutUsBottomGrid, .footerMain {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .dinosaurMain {
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 100px;
+  }
+
+/* Landing Section*/
+  .webName {
+    font-size: 1rem;
+  }
+
+  #thesaurus {
+    width: 35px;
+  }
+
+  .languages {
+    display: none;
+  }
+
+  #dropdownMenu {
+    width: 25px;
+  }
+
+  .openingTitle {
+    margin-top: 10%;
+  }
+
+  .openingTitle .top {
+    font-size: 1.3rem;
+  }
+
+  .openingTitle .bottom {
+    font-size: 2.8rem;
+  }
+
+  .openingInfo {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    line-height: 1.3;
+    padding-right: 10%;
+  }
+
+/* Dinosaur Section */
+  .dinosaurMain {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .dinosaurImage {
+    align-self: auto;
+    margin-top: 30%;
+  }
+
+  .dinoHead {
+    font-size: 2rem;
+  }
+
+  .dinoDescription {
+    font-size: 1rem;
+  } 
+
+  .dinoSelectButton {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+/* Carousel Section */
+  .carouselMain {
+    grid-template-rows: 150px 1fr;
+  }
+
+  .carouselHead {
+    font-size: 2rem;
+  }
+
+  .carouselBackground {
+    margin-top: 250px;
+  }
+
+  .dinosaurCarousel h2 {
+    margin-top: 25px;
+    font-size: 1.2rem;
+  }
+
+  .dinosaurCarousel {
+    gap: 70px;
+  }
+
+  .dinoCarouselItem {
+    width: 15rem;
+    height: 15rem;
+  }
+
+/* Palaeontology Section */
+  .palaeontologySection {
+    margin-top: 10px;
+    height: 450px;
+  }
+
+  .palaeoHead {
+    font-size: 2rem;
+  }
+
+  .palaeoDescription {
+    font-size: 1rem;
+  }
+
+  .palaeoButtonContainer {
+    margin-top: 30px;
+  }
+
+  .palaeoButton {
+    font-size: 1.1rem;
+  }
+
+/* About Us Section */
+  .aboutUsTopGrid {
+    grid-template-rows: 150px 600px;
+    margin-bottom: 200px;
+  }
+
+  .pteranodon {
+    grid-area: 2 / 2 / 3/ 4;
+    margin-top: 75px;
+  }
+
+  .aboutUsHead {
+    font-size: 2rem;
+  }
+
+  .aboutUsDescription {
+    font-size: 1rem;
+  }
+
+  .aboutUsContent {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+/* Footer Section */
+  .footerSocials {
+    grid-area: 1/ 1 / 2 / 2;
+    margin-top: 165px;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .footerHead {
+    font-size: 1.2rem;
+  }
+
+}
 
