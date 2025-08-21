@@ -2,10 +2,9 @@
 // File: javaScript_files/homepage.js
 /*****************************************************/
 console.log("hompage.js");
-
 /*****************************************************/
 
-function english () {
+function english() {
     console.log("change to english");
 
     document.getElementById("titleTop").textContent = "ENTER THE";
@@ -21,7 +20,7 @@ function english () {
     document.getElementById("languages").textContent = "English";
 }
 
-function japanese () {
+function japanese() {
     console.log("change to japanese");
 
     document.getElementById("titleTop").textContent = "先史時代の世界へ";
@@ -37,7 +36,7 @@ function japanese () {
     document.getElementById("languages").textContent = "日本語";
 }
 
-function vietnamese () {
+function vietnamese() {
     console.log("change to vietnamese");
 
     document.getElementById("titleTop").textContent = "NHẬP VÀO";

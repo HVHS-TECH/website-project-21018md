@@ -36,7 +36,6 @@ body {
   z-index: -100;
   width: 100%;
   height: auto;
-  display: none;
 }
 
 @keyframes walking {
@@ -50,6 +49,7 @@ body {
   animation-timeline: view();
   animation-range: contain;
   max-width: 100%;
+  display: none;
 }
 
 #footprint1 {
