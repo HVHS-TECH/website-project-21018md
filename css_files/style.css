@@ -339,13 +339,14 @@ body {
   background-color: #00FF64;
   color: #2E3E40;
   font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 1.5rem 1.5rem;
+  padding: 1.3rem 1.3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 55px;
+  margin-top: 50px;
+  letter-spacing: 1px;
 }
 
 .dinoSelectButton:hover {
@@ -399,6 +400,7 @@ body {
   font-family: "Inter", sans-serif;
   margin-top: 48px;
   font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .dinosaurCarousel {
@@ -516,12 +518,13 @@ body {
   background-color: #00FF64;
   color: #2E3E40;
   font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 1.5rem 1.5rem;
+  padding: 1.3rem 1.3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .palaeoButton:hover {
@@ -806,9 +809,9 @@ body {
   }
 
   .dinoSelectButton {
-    font-size: 1.3rem;
-    padding: 1.2rem 1.2rem;
-    margin-top: 50px;
+    font-size: 0.9rem;
+    padding: 1.1rem 1.1rem;
+    margin-top: 40px;
   }
 
 /* Carousel Section */
@@ -863,8 +866,8 @@ body {
   }
 
   .palaeoButton {
-    font-size: 1.3rem;
-    padding: 1.2rem 1.2rem;
+    font-size: 0.9rem;
+    padding: 1.1rem 1.1rem;
   }
 
 /* About Us Section */
@@ -1077,7 +1080,8 @@ body {
 
   .dinoSelectButton {
     margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+    padding: 0.9rem 0.9rem;
   }
 
 /* Carousel Section */
@@ -1126,7 +1130,8 @@ body {
   }
 
   .palaeoButton {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+    padding: 0.9rem 0.9rem;
   }
 
 /* About Us Section */

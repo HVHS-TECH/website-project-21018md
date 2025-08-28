@@ -9,24 +9,6 @@
         <link rel="stylesheet" href="css_files/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
 
-        <!-- Scripts -->
-        <script src="./javaScript_files/homepage.js"></script>
-        <script>
-            window.addEventListener('load', () => {
-                const carousel = document.querySelector('.dinosaurCarousel');
-                const tricera = document.querySelector('.tricera');
-
-                if (carousel && tricera) {
-                // Get how far the tricera item is from the carousel start
-                const triceraOffset = tricera.offsetLeft + (tricera.offsetWidth / 2);
-                const scrollTo = triceraOffset - (carousel.clientWidth / 2);
-
-                carousel.scrollLeft = scrollTo;
-                }
-            });
-        </script>
-    
-
     </head>
     <body>
         <!-- Footprint Section -->
@@ -64,7 +46,7 @@
                 </div>
                 <div class="navItem" id="changeLanguage">
                     <div class="languagesButton">
-                        <button id="languages" class="languages">Languages</button>
+                        <button id="languages" class="languages">ENG</button>
                         <div id="dropdown-languages" class="dropdown-languages">
                             <button id="changeEnglish" class="translate" onclick="english()">English</button>
                             <button id="changeSpanish" class="translate">Español</button>
@@ -98,7 +80,7 @@
                     <p id="dinoDescription" class="dinoDescription">
                         During the Mesozoic Era, over 250 million years ago, Earth was dominated by a group of reptiles known as dinosaurs. From colossal claws to tiny teeth, these creatures ran amok throughout the Triassic, Jurassic, and Cretaceous periods. After the asteroid caused their extinction approximately 66 million years ago, scientific research has let us slowly rediscover their world.
                     </p>
-                    <button id="dinoSelectButton" class="dinoSelectButton">Dinosaurs --></button>
+                    <button id="dinoSelectButton" class="dinoSelectButton">LEARN MORE</button>
                 </div>
                 <img class="dinosaurImage" src="./images_files/dinosaurIMG/dinosaur_img.png" alt="A Tyranosaurus Rex walking through a prehistoric forest.">
             </div>
@@ -108,51 +90,66 @@
         <div class="carouselSection">
             <div class="carouselMain">
                 <div class="carouselTitle">
-                    <h1 class="carouselHead">DINOSAURS</h1>
+                    <h1 id="carouselHead" class="carouselHead">DINOSAURS</h1>
                 </div>
                 <div class="dinosaurCarousel">
                     <img class="arrow" id="leftArrow" alt="An arrow pointing to the left." src="./images_files/otherVG/left.svg">
                     <div class="pachy">
                         <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Pachycephalosaurus vector graphic" src="./images_files/dinosaursVG/pachy.svg"></div>
-                        <h2>PACHYCEPHALOSAURUS</h2>
+                        <h2 id="pachy">PACHYCEPHALOSAURUS</h2>
                     </div>
                     <div class="trex">
                         <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Tyranosaurus Rex vector graphic" src="./images_files/dinosaursVG/trex.svg"></div>
-                        <h2>TYRANOSAURUS REX</h2>
+                        <h2 id="trex">TYRANOSAURUS REX</h2>
                     </div>
                     <div class="tricera">
                         <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Triceratops vector graphic" src="./images_files/dinosaursVG/triceratops.svg"></div>
-                        <h2>TRICERATOPS</h2>
+                        <h2 id="tricera">TRICERATOPS</h2>
                     </div>
                     <div class="raptor">
                         <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Velociraptor vector graphic" src="./images_files/dinosaursVG/raptor.svg"></div>
-                        <h2>VELOCIRAPTOR</h2>
+                        <h2 id="raptor">VELOCIRAPTOR</h2>
                     </div>
                     <div class="diplo">
                         <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Diplodocus vector graphic" src="./images_files/dinosaursVG/diplo.svg"></div>
-                        <h2>DIPLIDOCUS</h2>
+                        <h2 id="diplo">DIPLIDOCUS</h2>
                     </div>
                     <div class="ankylo">
                         <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Ankylosaurus vector graphic" src="./images_files/dinosaursVG/ankylo.svg"></div>
-                        <h2>ANKYLOSAURUS</h2>
+                        <h2 id="ankylo">ANKYLOSAURUS</h2>
                     </div>
                     <img class="arrow" id="rightArrow" alt="An arrow pointing to the right." src="./images_files/otherVG/right.svg">
                 </div>
                 <img class="carouselBackground" alt="The earth during the mesozoic period" src="./images_files/environmentVG/mesozoicEarth.svg">
             </div>
         </div>    
-            
+
+        <!-- Set carousel position -->
+        <script>
+            window.addEventListener('load', () => {
+                const carousel = document.querySelector('.dinosaurCarousel');
+                const tricera = document.querySelector('.tricera');
+
+                if (carousel && tricera) {
+                const triceraOffset = tricera.offsetLeft + (tricera.offsetWidth / 2);
+                const scrollTo = triceraOffset - (carousel.clientWidth / 2);
+
+                carousel.scrollLeft = scrollTo;
+                }
+            });
+        </script>
+        
         <!-- Palaeontology Section -->
         <div class="palaeontologySection">
             <div class="palaeontologyMain">
                 <div class="palaeontologyTitle">
-                    <h1 class="palaeoHead">THEIR REMNANTS</h1>
+                    <h1 id="palaeoHead" class="palaeoHead">THEIR REMNANTS</h1>
                 </div>
-                <p class="palaeoDescription">
+                <p id="palaeoDescription" class="palaeoDescription">
                     Palaeontology is the study of ancient living organisms through fossils. Fossils are the preserved remains or traces of once-living creatures, such as bones, shells, DNA, or even footprints. Although old, these special rocks have allowed us to see what Earth was like during prehistoric times.
                 </p>
                 <div class="palaeoButtonContainer">
-                    <button class="palaeoButton">Palaeontology --></button>
+                    <button id="palaeoButton" class="palaeoButton">LEARN MORE</button>
                 </div>
             </div>
         </div>
@@ -164,8 +161,8 @@
                 <img class="pteranodon" alt="A turquiose Pteranodon vector graphic" src="./images_files/dinosaursVG/pteranodon.svg">
                 <img class="smallCloud" alt="A small set of clouds" src="./images_files/environmentVG/clouds2.svg">
                 <div class="aboutUsContent">
-                    <h1 class="aboutUsHead">ABOUT US</h1>
-                    <p class="aboutUsDescription">
+                    <h1 class="aboutUsHead" id="aboutUsHead">ABOUT US</h1>
+                    <p class="aboutUsDescription" id="aboutUsDescription">
                     Hey there, explorer. We're THESAURUS REX. Want to discover how the dinosaurs lived, what they ate, and how varied they were? Or maybe learn about the fossils they left behind and how scientists use them to help us understand our planet? Join us on an adventure to the past and peek into the prehistoric world of dinosaurs!
                     </p>
                 </div>
@@ -176,6 +173,7 @@
                 <img class="tree" alt="A tall green tree" src="./images_files/environmentVG/tree.svg">
             </div>
         </div>
+
         <!-- Footer Section -->
         <footer class="footerSection">
             <div class="footerMain">
@@ -183,27 +181,27 @@
                     <h1 class="footerHead">THESAURUS REX</h1>
                 </div>
                 <div class="footerDinoLinks">
-                    <h1 class="footerSubHead">Dinosaurs</h1>
+                    <h1 class="footerSubHead" id="footerDinoHead">Dinosaurs</h1>
                     <ul class="footerList">
                         <li>
-                            <a class="footerLink" href="index.html">Tyranosaurus</a>
+                            <a class="footerLink" href="index.html" id="trexLink">Tyranosaurus</a>
                         </li>
                         <li>
-                            <a class="footerLink" href="index.html">Velociraptor</a>
+                            <a class="footerLink" href="index.html" id="raptorLink">Velociraptor</a>
                         </li>
                         <li>
-                            <a class="footerLink" href="index.html">Triceratops</a>
+                            <a class="footerLink" href="index.html" id="triceraLink">Triceratops</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footerPalaeoLinks">
-                    <h1 class="footerSubHead">Palaeontology</h1>
+                    <h1 class="footerSubHead" id="footerPalaeoHead">Palaeontology</h1>
                     <ul class="footerList">
                         <li>
-                            <a class="footerLink" href="index.html">What is it?</a>
+                            <a class="footerLink" href="index.html" id="palaeoLinkOne">What is it?</a>
                         </li>
                         <li>
-                            <a class="footerLink" href="index.html">Why is it important?</a>
+                            <a class="footerLink" href="index.html" id="palaeoLinkTwo">Why is it important?</a>
                         </li>
                     </ul>
                 </div>
@@ -215,5 +213,9 @@
                 </div>
             </div>
         </footer>
+
+        <!-- link to JavaScript file-->
+        <script src="./javaScript_files/homepage.js"></script>
+
     </body>
 </html>
