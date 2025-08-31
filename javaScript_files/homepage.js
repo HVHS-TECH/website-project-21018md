@@ -38,7 +38,7 @@ function english() {
     titleTop.textContent = "ENTER THE";
     titleBottom.textContent = "PREHISTORIC WORLD";
     openingInfo.textContent = "Travel back to a time long before humans, filled with bizarre creatures and vast landscapes - welcome to the age of dinosaurs!";
-    languages.textContent = "ENG";
+    languages.textContent = "ENGLISH";
 
     // Dinosaur section
     dinoHead.textContent = "THE TITANS";
@@ -80,7 +80,7 @@ function japanese() {
     titleTop.textContent = "ようこそ,";
     titleBottom.textContent = "先史時代の世界へ";
     openingInfo.textContent = "人類誕生以前の奇妙な生き物や広大な風景に満ちた時代へ旅立ちましょう。恐竜の時代へようこそ!";
-    languages.textContent = "JPN";
+    languages.textContent = "日本語";
 
     // Dinosaur section
     dinoHead.textContent = "タイタンズ";
@@ -97,7 +97,7 @@ function japanese() {
     ankylo.textContent = "アンキロサウルス";
 
     // Palaeo Section
-    palaeoHead.textContent = "その残骸ざんがい";
+    palaeoHead.textContent = "その残骸";
     palaeoDescription.textContent = "古生物学は、化石を通じて古代の生物を研究する学問です。化石とは、骨、貝殻、DNA、あるいは足跡など、かつて生きていた生物の保存された残骸や痕跡のことを指します。これらの古い特別な岩石のおかげで、私たちは先史時代の地球がどのようであったかを知ることができるのです。";
     palaeoButton.textContent = "ページを見る";
 
@@ -114,20 +114,3 @@ function japanese() {
     palaeoLinkOne.textContent = "それは何ですか？";
     palaeoLinkTwo.textContent = "なぜそれが重要なのですか？";
 }
-
-function vietnamese() {
-    console.log("change to vietnamese");
-
-    titleTop.textContent = "NHẬP VÀO";
-    titleBottom.textContent = "THẾ GIỚI TIỀN SỬ";
-    openingInfo.textContent = "Quay ngược thời gian trở về thời kỳ rất lâu trước khi con người xuất hiện, nơi có nhiều sinh vật kỳ lạ và cảnh quan rộng lớn - chào mừng đến với thời đại khủng long!";
-
-    dinoHead.textContent = "KHỦNG LONG";
-
-    dinoDescription.textContent = "Trong Kỷ Trung Sinh, hơn 250 triệu năm trước, Trái Đất bị thống trị bởi một nhóm bò sát được gọi là khủng long. Từ những móng vuốt khổng lồ đến những chiếc răng nhỏ xíu, những sinh vật này đã hoành hành khắp các kỷ Trias, Jura và Phấn Trắng. Sau khi một tiểu hành tinh gây ra sự tuyệt chủng của chúng khoảng 66 triệu năm trước, nghiên cứu khoa học đã cho phép chúng ta dần khám phá lại thế giới của chúng.";
-
-    dinoSelectButton.textContent = "XEM TRANG";
-
-    languages.textContent = "VN";
-}
-
