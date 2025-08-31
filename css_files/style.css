@@ -367,7 +367,7 @@ body {
 .bigSection {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 400px 200px 400px 200px;
+  grid-template-rows: 200px 760px 200px 400px 200px;
 }
 
 
@@ -395,7 +395,7 @@ body {
 }
 
 .carouselBackground {
-  grid-area: 1 / 1 / 5 / 2;
+  grid-area: 2 / 1 / 5 / 2;
   width: 100%;
   z-index: -2;
 }
