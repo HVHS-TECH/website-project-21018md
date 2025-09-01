@@ -773,7 +773,11 @@ body {
   }
 
   .dropdown-languages {
-    min-width: 125px;
+    min-width: 105px;
+  }
+
+  .translate {
+    font-size: 0.7rem;
   }
 
   .openingTitle {
@@ -917,6 +921,14 @@ body {
 
   #changeLanguage {
     padding-right: 40px;
+  }
+
+  .dropdown-languages {
+    min-width: 90px;
+  }
+
+  .translate {
+    font-size: 0.6rem;
   }
 
   #dropdownMenu {
@@ -1082,11 +1094,12 @@ body {
 
 /* Landing Section*/
   .webName {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    margin-left: 0.2rem;
   }
 
   #thesaurus {
-    width: 35px;
+    width: 20px;
   }
 
   .languages {
@@ -1094,7 +1107,7 @@ body {
   }
 
   #dropdownMenu {
-    width: 25px;
+    width: 15px;
   }
 
   .openingTitle {
