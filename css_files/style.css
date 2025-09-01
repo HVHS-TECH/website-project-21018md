@@ -1123,35 +1123,30 @@ body {
   }
 
   .openingInfo {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin-top: 0.5rem;
     line-height: 1.3;
-    padding-right: 10%;
+    padding-right: 15%;
   }
 
 /* Dinosaur Section */
   .dinosaurMain {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .dinosaurImage {
-    align-self: auto;
-    margin-top: 30%;
+    grid-template-rows: 0.5fr 1fr;
   }
 
   .dinoHead {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .dinoDescription {
-    font-size: 1rem;
+    font-size: 0.7rem;
   } 
 
   .dinoSelectButton {
-    margin-bottom: 10px;
-    font-size: 0.7rem;
-    padding: 0.9rem 0.9rem;
+    font-size: 0.6rem;
+    padding: 0.8rem 0.8rem;
+    margin-top: 25px;
   }
 
 /* Carousel Section */
@@ -1160,7 +1155,7 @@ body {
   }
 
   .carouselHead {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .carouselBackground {
@@ -1169,7 +1164,7 @@ body {
 
   .dinosaurCarousel h2 {
     margin-top: 25px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .dinosaurCarousel {
@@ -1177,37 +1172,39 @@ body {
   }
 
   .dinoCarouselItem {
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
   }
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 10px;
-    height: 350px;
+    margin-top: 65px;
+    height: 300px;
   }
 
   .palaeoHead {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .palaeoDescription {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .palaeoButtonContainer {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .palaeoButton {
-    font-size: 0.7rem;
-    padding: 0.9rem 0.9rem;
+    font-size: 0.6rem;
+    padding: 0.8rem 0.8rem;
   }
 
 /* About Us Section */
   .aboutUsTopGrid {
     grid-template-rows: 150px 600px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 
   .pteranodon {
@@ -1216,11 +1213,11 @@ body {
   }
 
   .aboutUsHead {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .aboutUsDescription {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .aboutUsContent {
@@ -1237,7 +1234,11 @@ body {
   }
 
   .footerHead {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
+  }
+
+  .social {
+    width: 15%;
   }
 
 }
