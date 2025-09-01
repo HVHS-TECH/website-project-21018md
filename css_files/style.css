@@ -1052,6 +1052,18 @@ body {
     margin-top: 150px;
   }
 
+  .brachiosaurus {
+    top: 10px;
+  }
+
+  .mountains {
+    top: 0.5px;
+  }
+  
+  .tree {
+    top: 10px
+  }
+
 /*Footer Section */
   .footerDinoLinks, .footerPalaeoLinks {
     display: none;
@@ -1225,20 +1237,33 @@ body {
     padding-right: 25px;
   }
 
+  .brachiosaurus {
+    top: 7px;
+  }
+
+  .tree {
+    top: 7px;
+  }
+
 /* Footer Section */
   .footerSocials {
     grid-area: 1/ 1 / 2 / 2;
-    margin-top: 165px;
+    margin-top: 135px;
     display: flex;
     align-self: flex-end;
   }
 
   .footerHead {
     font-size: 0.7rem;
+    margin-top: 50px;
   }
 
   .social {
-    width: 15%;
+    width: 18%;
+  }
+
+  #facebook, #instagram, #youtube {
+    margin-right: 25px;
   }
 
 }
@@ -1257,29 +1282,60 @@ body {
     margin-top: 100px;
   }
 
-/* Dinosaur Section */
-  .dinosaurMain {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+/* Landing Section*/
+  .webName {
+    font-size: 0.7rem;
+    margin-left: 0.2rem;
   }
 
+  #thesaurus {
+    width: 20px;
+  }
+
+  .languages {
+    display: none;
+  }
+
+  #dropdownMenu {
+    width: 15px;
+  }
+
+  .openingTitle {
+    margin-top: 10%;
+  }
+
+  .openingTitle .top {
+    font-size: 1rem;
+  }
+
+  .openingTitle .bottom {
+    font-size: 2rem;
+  }
+
+  .openingInfo {
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 1.3;
+    padding-right: 15%;
+  }
+
+/* Dinosaur Section */
   .dinosaurImage {
     align-self: auto;
-    margin-top: 30%;
   }
 
   .dinoHead {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .dinoDescription {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   } 
 
   .dinoSelectButton {
-    margin-bottom: 10px;
-    font-size: 0.6rem;
-    padding: 0.9rem 0.9rem;
+    margin-bottom: 60px;
+    font-size: 0.5rem;
+    padding: 0.7rem 0.7rem;
   }
 
 /* Carousel Section */
@@ -1288,7 +1344,7 @@ body {
   }
 
   .carouselHead {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .carouselBackground {
@@ -1297,45 +1353,46 @@ body {
 
   .dinosaurCarousel h2 {
     margin-top: 25px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .dinosaurCarousel {
     gap: 70px;
+    margin-top: 0px;
   }
 
   .dinoCarouselItem {
-    width: 13rem;
-    height: 13rem;
+    width: 11rem;
+    height: 11rem;
   }
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 10px;
-    height: 350px;
+    margin-top: 25px;
+    height: 250px;
   }
 
   .palaeoHead {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .palaeoDescription {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   .palaeoButtonContainer {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .palaeoButton {
-    font-size: 0.7rem;
-    padding: 0.9rem 0.9rem;
+    font-size: 0.5rem;
+    padding: 0.7rem 0.7rem;
   }
 
 /* About Us Section */
   .aboutUsTopGrid {
     grid-template-rows: 150px 600px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 
   .pteranodon {
@@ -1344,11 +1401,11 @@ body {
   }
 
   .aboutUsHead {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .aboutUsDescription {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   .aboutUsContent {
@@ -1359,13 +1416,21 @@ body {
 /* Footer Section */
   .footerSocials {
     grid-area: 1/ 1 / 2 / 2;
-    margin-top: 165px;
+    margin-top: 135px;
     display: flex;
     align-self: flex-end;
   }
 
   .footerHead {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
+  }
+
+  .social {
+    width: 20%;
+  }
+
+  #facebook, #instagram, #youtube {
+    margin-right: 20px;
   }
 
 }
