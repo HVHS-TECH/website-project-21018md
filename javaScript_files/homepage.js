@@ -38,7 +38,7 @@ function english() {
     titleTop.textContent = "ENTER THE";
     titleBottom.textContent = "PREHISTORIC WORLD";
     openingInfo.textContent = "Travel back to a time long before humans, filled with bizarre creatures and vast landscapes - welcome to the age of dinosaurs!";
-    languages.textContent = "ENGLISH";
+    languages.textContent = "English";
 
     // Dinosaur section
     dinoHead.textContent = "THE TITANS";

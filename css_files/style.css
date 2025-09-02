@@ -202,6 +202,7 @@ body {
   margin-left: 0.5rem;
   font-family: "Inter", sans-serif;
   color: #00FF64;
+  font-weight: 700;
   font-size: 1.6rem;
   cursor: pointer;
 }
@@ -210,18 +211,20 @@ body {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
   background-color: transparent;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
+  text-decoration: underline;
 }
 
 .dropdown-languages {
   position: absolute;
   background-color: black;
   min-width: 125px;
+  margin-top: 10px;
   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
   z-index: 1;
   border: #00FF64 5px solid;
@@ -285,10 +288,12 @@ body {
 
 .openingTitle .top {
   font-size: 3rem;
+  font-weight: 700;
 }
 
 .openingTitle .bottom {
   font-size: 6.25rem;
+  font-weight: 700;
 }
 
 .openingInfo {
@@ -322,6 +327,7 @@ body {
   font-size: 4rem;
   font-family: "Inter", sans-serif;
   color: #00FF64;
+  font-weight: 700;
   padding: 0%;
 }
 
@@ -380,6 +386,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-size: 4rem;
+  font-weight: 700;
   text-align: center;
   margin: 0%;
   padding: 0%;
@@ -400,6 +407,7 @@ body {
   margin-top: 48px;
   font-size: 1.5rem;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .dinosaurCarousel {
@@ -495,6 +503,7 @@ body {
   color: #00FF64;
   padding: 0%;
   text-align: center;
+  font-weight: 700;
 }
 
 .palaeoDescription {
@@ -618,6 +627,7 @@ body {
   color: #00FF64;
   font-size: 4rem;
   margin-top: 100px;
+  font-weight: 700;
 }
 
 .aboutUsDescription {
@@ -650,6 +660,7 @@ body {
   color: #2E3E40;
   font-size: 1.6rem;
   margin-top: 50px;
+  font-weight: 700;
 }
 
 .footerList {
@@ -662,6 +673,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #2E3E40;
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .footerLink {
