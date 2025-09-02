@@ -1278,6 +1278,10 @@ body {
     margin-right: 25px;
   }
 
+  .footerSection {
+    height: 200px;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -1318,10 +1322,12 @@ body {
 
   .openingTitle .top {
     font-size: 1rem;
+    font-weight: bold;
   }
 
   .openingTitle .bottom {
     font-size: 2rem;
+    font-weight: bold;
   }
 
   .openingInfo {
@@ -1445,5 +1451,14 @@ body {
     margin-right: 20px;
   }
 
+  .footerSection {
+    height: 200px;
+  }
+
 }
 
+@media screen and (max-width: 365px) {
+  .palaeontologySection {
+    margin-top: 20px;
+  }
+}
