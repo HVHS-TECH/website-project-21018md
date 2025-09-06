@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The THESAURUS REX</title>
+        <link rel="icon" type="image/x-icon" href="./images_files/otherVG/logo.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css_files/dinosaurSelection.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- Navigation Section -->
+        <div class="landingSection">
+            <nav class="navigation">
+                <div class="navItem" id="homeButton">
+                    <img id="thesaurus" onclick="window.location='index.html'" alt="website logo: A T-Rex wearing glasses" src="./images_files/otherVG/logo.svg">
+                    <h2 class="webName" onclick="window.location='index.html'">THESAURUS REX</h2>
+                </div>
+                <div class="navItem" id="changeLanguage">
+                    <div class="languagesButton">
+                        <button id="languages" class="languages">English</button>
+                        <div id="dropdown-languages" class="dropdown-languages">
+                            <button id="changeEnglish" class="translate" onclick="english()">English</button>
+                            <button id="changeJapanese" class="translate" onclick="japanese()">日本語</button>
+                            <button id="changeSpanish" class="translate">Español</button>
+                            <button id="changeFrench" class="translate">Français</button>
+                            <button id="changeGerman" class="translate">Deutsch</button>
+                            <button id="changeVietnamese" class="translate">Tiếng việt</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="navItem" id="menu">
+                    <img id="dropdownMenu" alt="dropdown menu" src="./images_files/otherVG/dropdown.svg">
+                </div>
+            </nav>
+        </div>
+
+        <!-- Select Section -->
+        <div class="selectSection">
+            <div class="dinosaurBoxes">
+                <div class="pachy">
+                    <div class="dinoBox"><img id="pachy_img" class="boxImage" alt="A Pachycephalosaurus vector graphic" src="./images_files/dinosaursVG/pachy.svg"></div>
+                    <h2 id="pachy_h2" class="dinoName">PACHYCEPHALOSAURUS</h2>
+                </div>
+                <div class="trex">
+                    <div class="dinoBox"><img id="trex_img" class="boxImage" alt="A Tyranosaurus Rex vector graphic" src="./images_files/dinosaursVG/trex.svg"></div>
+                    <h2 id="trex_h2" class="dinoName">TYRANOSAURUS REX</h2>
+                </div>
+                <div class="tricera">
+                    <div class="dinoBox"><img id="tricera_img" class="boxImage" alt="A Triceratops vector graphic" src="./images_files/dinosaursVG/triceratops.svg"></div>
+                    <h2 id="tricera_h2" class="dinoName">TRICERATOPS</h2>
+                </div>
+                <div class="raptor">
+                    <div class="dinoBox"><img id="raptor_img" class="boxImage" alt="A Velociraptor vector graphic" src="./images_files/dinosaursVG/raptor.svg"></div>
+                    <h2 id="raptor_h2" class="dinoName">VELOCIRAPTOR</h2>
+                </div>
+                <div class="diplo">
+                    <div class="dinoBox"><img id="diplo_img" class="boxImage" alt="A Diplodocus vector graphic" src="./images_files/dinosaursVG/diplo.svg"></div>
+                    <h2 id="diplo_h2" class="dinoName">DIPLIDOCUS</h2>
+                </div>
+                <div class="ankylo">
+                    <div class="dinoBox"><img id="ankylo_img" class="boxImage" alt="A Ankylosaurus vector graphic" src="./images_files/dinosaursVG/ankylo.svg"></div>
+                    <h2 id="ankylo_h2" class="dinoName">ANKYLOSAURUS</h2>
+                </div>
+            </div>
+        </div>
+
+         <!-- Footer Section -->
+        <footer class="footerSection">
+            <div class="footerMain">
+                <div class="footerTitle">
+                    <h1 class="footerHead">THESAURUS REX</h1>
+                </div>
+                <div class="footerDinoLinks">
+                    <h1 class="footerSubHead" id="footerDinoHead">Dinosaurs</h1>
+                    <ul class="footerList">
+                        <li>
+                            <a class="footerLink" href="index.html" id="trexLink">Tyranosaurus</a>
+                        </li>
+                        <li>
+                            <a class="footerLink" href="index.html" id="raptorLink">Velociraptor</a>
+                        </li>
+                        <li>
+                            <a class="footerLink" href="index.html" id="triceraLink">Triceratops</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerPalaeoLinks">
+                    <h1 class="footerSubHead" id="footerPalaeoHead">Palaeontology</h1>
+                    <ul class="footerList">
+                        <li>
+                            <a class="footerLink" href="index.html" id="palaeoLinkOne">What is it?</a>
+                        </li>
+                        <li>
+                            <a class="footerLink" href="index.html" id="palaeoLinkTwo">Why is it important?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerSocials">
+                    <img class="social" id="facebook" alt="facebook icon" src="./images_files/otherVG/facebook.svg" onclick="window.open('https://www.facebook.com/profile.php?id=61578489968294')">
+                    <img class="social" id="instagram" alt="instagram icon" src="./images_files/otherVG/instagram.svg" onclick="window.open('https://www.instagram.com/thesaurus.rexofficial/')">
+                    <img class="social" id="youtube" alt="youtube icon" src="./images_files/otherVG/youtube.svg" onclick="window.open('https://www.youtube.com/@th3saurusRex')">
+                    <img class="social" id="x" alt="X icon" src="./images_files/otherVG/x.svg" onclick="window.open('https://x.com/Th3saurusRex')">
+                </div>
+            </div>
+        </footer>
+
+        <!-- link to JavaScript file-->
+        <script src="./javaScript_files/dinosaurSelection.js"></script>
+
+    </body>
+</html>

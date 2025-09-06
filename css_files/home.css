@@ -1,5 +1,5 @@
 /*****************************************************/
-/* File: css_files/style.css */
+/* File: css_files/home.css */
 /*****************************************************/
 
 /*************************************************************************************/
@@ -224,7 +224,6 @@ body {
   position: absolute;
   background-color: black;
   min-width: 125px;
-  margin-top: 10px;
   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
   z-index: 1;
   border: #00FF64 5px solid;
@@ -352,10 +351,12 @@ body {
   cursor: pointer;
   margin-top: 50px;
   letter-spacing: 1px;
+  transition: transform 0.2s ease;
 }
 
 .dinoSelectButton:hover {
   background-color: white;
+  transform: scale(1.1);
 }
 
 .dinosaurImage {
@@ -373,7 +374,7 @@ body {
 .carouselMain {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: 1fr 3fr;
   margin-top: 160px;
 }
 
@@ -419,7 +420,7 @@ body {
   overflow-y: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .dinosaurCarousel:hover .arrow{
@@ -436,6 +437,13 @@ body {
   flex: 0 0 20%;
   height: 25rem;
   width: 25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dinoCarouselItem:hover {
+  background-color: white;
+  transform: scale(1.1);
 }
 
 .dinosaurCarousel::-webkit-scrollbar {
@@ -476,7 +484,7 @@ body {
 /*************************************************************************************/
 
 .palaeontologySection {
-  margin-top: 430px;
+  margin-top: 440px;
   height: 950px;
 }
 
@@ -533,15 +541,16 @@ body {
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 1px;
+  transition: transform 0.2s ease;
 }
 
 .palaeoButton:hover {
   background-color: white;
+  transform: scale(1.1);
 }
 
 /*************************************************************************************/
 /* About Section Styles */
-
 /*************************************************************************************/
 
 .aboutUsTopGrid {
@@ -704,10 +713,11 @@ body {
 
 .social {
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .social:hover {
-  width: 15%;
+  transform: scale(1.4);
 }
 
 .footerDinoLinks {
@@ -749,7 +759,7 @@ body {
   }
 
   .palaeontologySection {
-    margin-top: 415px;
+    margin-top: 420px;
   }
 
 /* Dinosaur Section */
@@ -836,7 +846,6 @@ body {
 
   .dinosaurCarousel {
     gap: 100px;
-    margin-top: 20px;
   }
 
   .carouselHead {
@@ -856,12 +865,11 @@ body {
   }
 
   .carouselBackground {
-    margin-top: 330px;
+    margin-top: 370px;
   }
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin: 0px;
     margin-top: 250px;
     height: 650px;
   }
@@ -1006,6 +1014,10 @@ body {
     font-size: 2.5rem;
   }
 
+  .dinosaurCarousel {
+    padding-top: 70px;
+  }
+
   .arrow {
     width: 10%;
   }
@@ -1021,7 +1033,7 @@ body {
 /* Palaeontology Section */
   .palaeontologySection {
     height: 500px;
-    margin-top: 120px;
+    margin-top: 115px;
   }
 
   .palaeoHead {
@@ -1174,10 +1186,6 @@ body {
   }
 
 /* Carousel Section */
-  .carouselMain {
-    grid-template-rows: 150px 1fr;
-  }
-
   .carouselHead {
     font-size: 1.5rem;
   }
@@ -1202,7 +1210,7 @@ body {
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 65px;
+    margin-top: 60px;
     height: 300px;
   }
 
@@ -1357,16 +1365,12 @@ body {
   }
 
 /* Carousel Section */
-  .carouselMain {
-    grid-template-rows: 150px 1fr;
-  }
-
   .carouselHead {
     font-size: 1.4rem;
   }
 
   .carouselBackground {
-    margin-top: 200px;
+    margin-top: 230px;
   }
 
   .dinosaurCarousel h2 {
@@ -1386,7 +1390,7 @@ body {
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 25px;
+    margin-top: 35px;
     height: 250px;
   }
 
@@ -1454,7 +1458,6 @@ body {
   .footerSection {
     height: 200px;
   }
-
 }
 
 @media screen and (max-width: 360px) {

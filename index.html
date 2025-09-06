@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="css_files/style.css">
+        <link rel="stylesheet" href="css_files/home.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
 
     </head>
@@ -80,7 +80,7 @@
                     <p id="dinoDescription" class="dinoDescription">
                         During the Mesozoic Era, over 250 million years ago, Earth was dominated by a group of reptiles known as dinosaurs. From colossal claws to tiny teeth, these creatures ran amok throughout the Triassic, Jurassic, and Cretaceous periods. After the asteroid caused their extinction approximately 66 million years ago, scientific research has let us slowly rediscover their world.
                     </p>
-                    <button id="dinoSelectButton" class="dinoSelectButton">LEARN MORE</button>
+                    <button id="dinoSelectButton" class="dinoSelectButton" onclick="window.location='dinosaurSelection.html'">LEARN MORE</button>
                 </div>
                 <img class="dinosaurImage" src="./images_files/dinosaurIMG/dinosaur_img.png" alt="A Tyranosaurus Rex walking through a prehistoric forest.">
             </div>
@@ -95,28 +95,28 @@
                 <div class="dinosaurCarousel">
                     <img class="arrow" id="leftArrow" alt="An arrow pointing to the left." src="./images_files/otherVG/left.svg">
                     <div class="pachy">
-                        <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Pachycephalosaurus vector graphic" src="./images_files/dinosaursVG/pachy.svg"></div>
-                        <h2 id="pachy">PACHYCEPHALOSAURUS</h2>
+                        <div onmouseover="pachyHoverChange()" onmouseout="pachyHoverRevert()" class="dinoCarouselItem"><img id="pachy_img" class="carouselIMG" alt="A Pachycephalosaurus vector graphic" src="./images_files/dinosaursVG/pachy.svg"></div>
+                        <h2 id="pachy_h2" class="dinoName">PACHYCEPHALOSAURUS</h2>
                     </div>
                     <div class="trex">
-                        <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Tyranosaurus Rex vector graphic" src="./images_files/dinosaursVG/trex.svg"></div>
-                        <h2 id="trex">TYRANOSAURUS REX</h2>
+                        <div onmouseover="trexHoverChange()" onmouseout="trexHoverRevert()" class="dinoCarouselItem"><img id="trex_img" class="carouselIMG" alt="A Tyranosaurus Rex vector graphic" src="./images_files/dinosaursVG/trex.svg"></div>
+                        <h2 id="trex_h2" class="dinoName">TYRANOSAURUS REX</h2>
                     </div>
                     <div class="tricera">
-                        <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Triceratops vector graphic" src="./images_files/dinosaursVG/triceratops.svg"></div>
-                        <h2 id="tricera">TRICERATOPS</h2>
+                        <div onmouseover="triceraHoverChange()" onmouseout="triceraHoverRevert()" class="dinoCarouselItem"><img id="tricera_img" class="carouselIMG" alt="A Triceratops vector graphic" src="./images_files/dinosaursVG/triceratops.svg"></div>
+                        <h2 id="tricera_h2" class="dinoName">TRICERATOPS</h2>
                     </div>
                     <div class="raptor">
-                        <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Velociraptor vector graphic" src="./images_files/dinosaursVG/raptor.svg"></div>
-                        <h2 id="raptor">VELOCIRAPTOR</h2>
+                        <div onmouseover="raptorHoverChange()" onmouseout="raptorHoverRevert()" class="dinoCarouselItem"><img id="raptor_img" class="carouselIMG" alt="A Velociraptor vector graphic" src="./images_files/dinosaursVG/raptor.svg"></div>
+                        <h2 id="raptor_h2" class="dinoName">VELOCIRAPTOR</h2>
                     </div>
                     <div class="diplo">
-                        <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Diplodocus vector graphic" src="./images_files/dinosaursVG/diplo.svg"></div>
-                        <h2 id="diplo">DIPLIDOCUS</h2>
+                        <div onmouseover="diploHoverChange()" onmouseout="diploHoverRevert()" class="dinoCarouselItem"><img id="diplo_img" class="carouselIMG" alt="A Diplodocus vector graphic" src="./images_files/dinosaursVG/diplo.svg"></div>
+                        <h2 id="diplo_h2" class="dinoName">DIPLIDOCUS</h2>
                     </div>
                     <div class="ankylo">
-                        <div class="dinoCarouselItem"><img class="carouselIMG" alt="A Ankylosaurus vector graphic" src="./images_files/dinosaursVG/ankylo.svg"></div>
-                        <h2 id="ankylo">ANKYLOSAURUS</h2>
+                        <div onmouseover="ankyloHoverChange()" onmouseout="ankyloHoverRevert()" class="dinoCarouselItem"><img id="ankylo_img" class="carouselIMG" alt="A Ankylosaurus vector graphic" src="./images_files/dinosaursVG/ankylo.svg"></div>
+                        <h2 id="ankylo_h2" class="dinoName">ANKYLOSAURUS</h2>
                     </div>
                     <img class="arrow" id="rightArrow" alt="An arrow pointing to the right." src="./images_files/otherVG/right.svg">
                 </div>
@@ -215,7 +215,7 @@
         </footer>
 
         <!-- link to JavaScript file-->
-        <script src="./javaScript_files/homepage.js"></script>
+        <script src="./javaScript_files/home.js"></script>
 
     </body>
 </html>
