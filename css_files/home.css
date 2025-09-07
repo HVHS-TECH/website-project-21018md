@@ -28,140 +28,23 @@ body {
 /* Footprint Styles */
 /*************************************************************************************/
 
-.footprintGrid {
+.footprintGridOne {
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(100, 0.5fr);
   position: absolute;
-  z-index: -100;
   width: 100%;
-  height: auto;
+  z-index: -10;
 }
 
-@keyframes walking {
-  0%   {visibility: hidden;}
-  100% {visibility: visible;}
+.footprintGridTwo {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
 }
 
-.footprint {
-  visibility: hidden;
-  animation: walking linear;
-  animation-timeline: view();
-  animation-range: contain;
-  max-width: 100%;
-  display: none;
+.track {
+  width: 100%;
 }
-
-#footprint1 {
-  grid-area: 21/ 20 / 22 / 21;
-  transform: rotate(200deg);
-}
-
-#footprint2 {
-  grid-area: 23/ 18 / 24 / 19;
-  transform: rotate(170deg);
-}
-
-#footprint3 {
-  grid-area: 27/ 19 / 28 / 20;
-  transform: rotate(200deg);
-}
-
-#footprint4 {
-  grid-area: 33/ 18 / 34 / 19;
-  transform: rotate(200deg);
-}
-
-#footprint5 {
-  grid-area: 34/ 16 / 35 / 17;
-  transform: rotate(180deg);
-}
-
-#footprint6 {
-  grid-area: 36/ 18 / 37 / 19;
-  transform: rotate(200deg);
-}
-
-#footprint7 {
-  grid-area: 33 / 1 / 34 / 2;
-  transform: rotate(160deg);
-}
-
-#footprint8 {
-  grid-area: 34 / 3 / 35 / 4;
-  transform: rotate(170deg);
-}
-
-#footprint9 {
-  grid-area: 36 / 2 / 37 / 3;
-  transform: rotate(180deg);
-}
-
-#footprint10 {
-  grid-area: 37 / 4 / 38 / 5;
-  transform: rotate(200deg);
-}
-
-#footprint11 {
-  grid-area: 39 / 2 / 40 / 3;
-  transform: rotate(170deg);
-}
-
-#footprint12 {
-  grid-area: 41 / 4 / 42 / 5;
-  transform: rotate(190deg);
-}
-
-#footprint13 {
-  grid-area: 90 / 19 / 91 / 20;
-  transform: rotate(230deg);
-}
-
-#footprint14 {
-  grid-area: 91 / 17 / 92 / 18;
-  transform: rotate(210deg);
-}
-
-#footprint15 {
-  grid-area: 93 / 16 / 94 / 17;
-  transform: rotate(240deg);
-}
-
-#footprint16 {
-  grid-area: 94 / 14 / 95 / 15;
-  transform: rotate(210deg);
-}
-
-#footprint17 {
-  grid-area: 94 / 3 / 95 / 4;
-  transform: rotate(150deg);
-}
-
-#footprint18 {
-  grid-area: 95 / 5 / 96 / 6;
-  transform: rotate(130deg);
-}
-
-#footprint19 {
-  grid-area: 96/ 7 / 97 / 8;
-  transform: rotate(150deg);
-}
-
-#footprint20{
-  grid-area: 97 / 6 / 98/ 7;
-  transform: rotate(160deg);
-}
-
-#footprint21 {
-  grid-area: 98 / 8 / 99 / 9;
-  transform: rotate(140deg);
-}
-
-#footprint22 {
-  grid-area: 99 / 7 / 100 / 8;
-  transform: rotate(150deg);
-}
-
 
 /*************************************************************************************/
 /* Navigation Styles */
@@ -405,7 +288,7 @@ body {
   text-align: center;
   color: white;
   font-family: "Inter", sans-serif;
-  margin-top: 48px;
+  margin-top: 50px;
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-weight: 700;
@@ -457,8 +340,8 @@ body {
 }
 
 .carouselIMG {
-  aspect-ratio: 4/ 2;
   margin-top: 30%;
+  aspect-ratio: 5/ 2;
   width: 90%;
 }
 
@@ -559,7 +442,6 @@ body {
   grid-template-rows: 250px 500px 300px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 300px;
 }
 
 .bigCloud {
@@ -902,10 +784,6 @@ body {
     font-size: 1.2rem;
   }
 
-  .aboutUsTopGrid {
-    margin-bottom: 200px;
-  }
-
   .aboutUsContent {
     margin-top: 200px;
   }
@@ -916,8 +794,7 @@ body {
 
 @media screen and (max-width: 768px) {
 /* Margins */
-  .navigation, .opening,
-  .aboutUsTopGrid, .aboutUsBottomGrid, .footerMain{
+  .navigation, .opening, .aboutUsBottomGrid, .footerMain{
     margin-left: 35px;
     margin-right: 35px;
   }
@@ -1067,7 +944,8 @@ body {
   .aboutUsTopGrid {
     grid-template-columns: 2fr 1fr 3fr;
     grid-template-rows: 250px 500px;
-    margin-bottom: 250px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 
   .aboutUsContent {
@@ -1116,8 +994,7 @@ body {
 
 @media screen and (max-width: 425px) {
 /* Margins */
-  .navigation, .opening,
-  .aboutUsTopGrid, .aboutUsBottomGrid, .footerMain {
+  .navigation, .opening, .aboutUsBottomGrid, .footerMain {
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -1235,8 +1112,9 @@ body {
 
 /* About Us Section */
   .aboutUsTopGrid {
-    grid-template-rows: 150px 600px;
-    margin-bottom: 50px;
+    grid-template-rows: 150px 450px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .pteranodon {
@@ -1294,8 +1172,7 @@ body {
 
 @media screen and (max-width: 375px) {
 /* Margins */
-  .navigation, .opening,
-  .aboutUsTopGrid, .aboutUsBottomGrid, .footerMain {
+  .navigation, .opening, .aboutUsBottomGrid, .footerMain {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1413,8 +1290,9 @@ body {
 
 /* About Us Section */
   .aboutUsTopGrid {
-    grid-template-rows: 150px 600px;
-    margin-bottom: 50px;
+    grid-template-rows: 150px 420px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .pteranodon {
