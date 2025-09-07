@@ -3,6 +3,8 @@
 /*****************************************************/
 console.log("hompage.js");
 
+var language = sessionStorage.getItem("currentLanguage");
+
 var titleTop = document.getElementById("titleTop");
 var titleBottom = document.getElementById("titleBottom");
 var openingInfo = document.getElementById("openingInfo");
@@ -42,8 +44,19 @@ var ankylo = document.getElementById("ankylo_img");
 // Translation feature
 /*****************************************************/
 
+function saveLanguage() {
+    console.log("Current language is " + language);
+
+    if (language == 'eng') {
+        english();
+    } else if (language == 'jap') {
+        japanese();
+    }
+}
+
 function english() {
     console.log("change to english");
+    sessionStorage.setItem("currentLanguage", "eng");
 
     // Landing section
     titleTop.textContent = "ENTER THE";
@@ -86,6 +99,7 @@ function english() {
 
 function japanese() {
     console.log("change to japanese");
+    sessionStorage.setItem("currentLanguage", "jap");
 
     // Landing Section
     titleTop.textContent = "ようこそ,";

@@ -119,6 +119,42 @@ body {
 }
 
 /*************************************************************************************/
+/* Landing Section Styles */
+/*************************************************************************************/
+
+.landingSection {
+  background-image: url("../images_files/dinosaurIMG/selectIMG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.pageHead {
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  font-weight: 700;
+  text-align: center;
+}
+
+#pageHeadTop {
+  font-size: 3rem;
+}
+
+#pageHeadBottom {
+  font-size: 6rem;
+}
+
+
+/*************************************************************************************/
 /* Select Section Styles */
 /*************************************************************************************/
 
@@ -126,7 +162,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 200px 60px 200px 60px;
+  margin: 200px 30px 200px 30px;
 }
 
 .dinosaurBoxes h2 {
@@ -134,7 +170,7 @@ body {
   color: white;
   font-family: "Inter", sans-serif;
   margin-top: 50px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 700;
 }
@@ -150,8 +186,15 @@ body {
   border-radius: 10px;
   padding: 20px;
   flex: 0 0 20%;
-  height: 25rem;
-  width: 25rem;
+  height: 23rem;
+  width: 23rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dinoBox:hover {
+  background-color: white;
+  transform: scale(1.1);
 }
 
 .boxImage {
