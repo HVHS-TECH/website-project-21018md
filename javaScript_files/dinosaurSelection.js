@@ -1,7 +1,7 @@
 /*****************************************************/
-// File: javaScript_files/homepage.js
+// File: javaScript_files/dinosaurSelection.js
 /*****************************************************/
-console.log("hompage.js");
+console.log("dinosaurSelection.js");
 
 var language = sessionStorage.getItem("currentLanguage");
 
@@ -21,6 +21,7 @@ var palaeoLinkOne = document.getElementById("palaeoLinkOne");
 var palaeoLinkTwo = document.getElementById("palaeoLinkTwo");
 var pageHeadTop = document.getElementById("pageHeadTop");
 var pageHeadBottom = document.getElementById("pageHeadBottom");
+var titleGrid = document.getElementById("titleGrid");
 
 var pachy = document.getElementById("pachy_img");
 var trex = document.getElementById("trex_img");
@@ -50,6 +51,7 @@ function english() {
 
     // Landing section
     pageHeadTop.style.display = "block";
+    titleGrid.style.gridTemplateRows = "1fr 2fr";
     pageHeadBottom.textContent = "DINOSAURS";
 
     // Select section
@@ -79,6 +81,7 @@ function japanese() {
 
     // Landing section
     pageHeadTop.style.display = "none";
+    titleGrid.style.gridTemplateRows = "1fr";
     pageHeadBottom.textContent = "恐竜";
 
     // Select section

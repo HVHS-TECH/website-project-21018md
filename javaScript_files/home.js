@@ -39,7 +39,6 @@ var tricera = document.getElementById("tricera_img");
 var diplo = document.getElementById("diplo_img");
 var ankylo = document.getElementById("ankylo_img");
 
-
 /*****************************************************/
 // Translation feature
 /*****************************************************/

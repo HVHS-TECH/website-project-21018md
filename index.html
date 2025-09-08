@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>The THESAURUS REX</title>
+        <title>The THESAURUS REX/Home</title>
         <link rel="icon" type="image/x-icon" href="./images_files/otherVG/logo.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
                     <h2 class="webName">THESAURUS REX</h2>
                 </div>
                 <div class="navItem" id="changeLanguage">
-                    <div class="languagesButton">
+                    <div class="languagesButton" id="languagesButton">
                         <button id="languages" class="languages">English</button>
                         <div id="dropdown-languages" class="dropdown-languages">
                             <button id="changeEnglish" class="translate" onclick="english()">English</button>
@@ -32,7 +32,14 @@
                     </div>
                 </div>
                 <div class="navItem" id="menu">
-                    <img id="dropdownMenu" alt="dropdown menu" src="./images_files/otherVG/dropdown.svg">
+                    <div class="dropdownButton" id="dropdownButton">
+                        <button id="dropdownMenu" class="dropdownMenu"><img id="dropdownIcon" alt="dropdown menu icon" src="./images_files/otherVG/dropdown.svg"></button>
+                        <div id="dropdown-pages" class="dropdown-pages">
+                            <button id="goHome" class="dropdownItem" onclick="window.location='index.html'">Home</button>
+                            <button id="goSelect" class="dropdownItem" onclick="window.location='dinosaurSelection.html'">Dinosaur Selection</button>
+                            <button id="goPalaeo" class="dropdownItem" onclick="window.location='palaeontology.html'">Palaeontology</button>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="opening">
@@ -44,11 +51,6 @@
                     Travel back to a time long before humans, filled with bizarre creatures and vast landscapes - welcome to the age of dinosaurs!
                 </p>
             </div>
-        </div>
-
-        <!-- Footprint Section 1 -->
-        <div class="footprintGridOne">
-            <img class="track" id="trackOne" src="./images_files/footprintVG/footprintsOne.svg" alt="a trail of multi-coloured dinosaur tracks">
         </div>
 
         <!-- Dinosaurs Section -->
@@ -140,14 +142,9 @@
                     Palaeontology is the study of ancient living organisms through fossils. Fossils are the preserved remains or traces of once-living creatures, such as bones, shells, DNA, or even footprints. Although old, these special rocks have allowed us to see what Earth was like during prehistoric times.
                 </p>
                 <div class="palaeoButtonContainer">
-                    <button id="palaeoButton" class="palaeoButton">LEARN MORE</button>
+                    <button id="palaeoButton" class="palaeoButton" onclick="window.location='palaeontology.html'">LEARN MORE</button>
                 </div>
             </div>
-        </div>
-
-        <!-- Footprint Section 2 -->
-        <div class="footprintGridTwo">
-            <img class="track" id="trackTwo" src="./images_files/footprintVG/footprintsTwo.svg" alt="a trail of multi-coloured dinosaur tracks">
         </div>
 
         <!-- About Us Section -->

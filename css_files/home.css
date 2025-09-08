@@ -71,7 +71,6 @@ body {
 #menu {
   grid-column: 4/ 5;
   align-self: center;
-  cursor: pointer;
 }
 
 #homeButton {
@@ -114,6 +113,7 @@ body {
 }
 
 .translate {
+  font-size: 0.9rem;
   color: #00FF64;
   font-weight: 500;
   padding: 1rem 0rem 1rem 1rem;
@@ -132,6 +132,46 @@ body {
 }
 
 .languagesButton:hover .dropdown-languages{
+  display: block;
+}
+
+.dropdownMenu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-pages {
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  height: auto;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+  z-index: 1;
+  border: #00FF64 5px solid;
+  display: none;
+  right: 4%;
+}
+
+.dropdownItem {
+  font-size: 0.9rem;
+  color: #00FF64;
+  font-weight: 500;
+  padding: 1rem 0rem 1rem 1rem;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdownItem:hover {
+  background-color: #2E3E40;
+}
+
+.dropdownButton:hover .dropdown-pages{
   display: block;
 }
 
@@ -258,7 +298,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr;
-  margin-top: 160px;
+  margin-top: 100px;
 }
 
 .carouselTitle {
@@ -303,7 +343,7 @@ body {
   overflow-y: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .dinosaurCarousel:hover .arrow{
@@ -322,6 +362,7 @@ body {
   width: 25rem;
   cursor: pointer;
   transition: transform 0.2s ease;
+  align-content: center;
 }
 
 .dinoCarouselItem:hover {
@@ -340,9 +381,8 @@ body {
 }
 
 .carouselIMG {
-  margin-top: 30%;
-  aspect-ratio: 5/ 2;
-  width: 90%;
+  width: 100%;
+  padding: 10px;
 }
 
 .arrow {
@@ -367,7 +407,7 @@ body {
 /*************************************************************************************/
 
 .palaeontologySection {
-  margin-top: 440px;
+  margin-top: 500px;
   height: 950px;
 }
 
@@ -439,7 +479,7 @@ body {
 .aboutUsTopGrid {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr;
-  grid-template-rows: 250px 500px 300px;
+  grid-template-rows: 250px 500px 250px;
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -641,7 +681,7 @@ body {
   }
 
   .palaeontologySection {
-    margin-top: 420px;
+    margin-top: 485px;
   }
 
 /* Dinosaur Section */
@@ -652,7 +692,7 @@ body {
 
 @media screen and (max-width: 1024px) {
 /* Margins */
-  .navigation, .opening, .aboutUsTopGrid, 
+  .navigation, .opening, 
   .aboutUsBottomGrid, .footerMain{
     margin-left: 45px;
     margin-right: 45px;
@@ -723,7 +763,7 @@ body {
 
 /* Carousel Section */
   .carouselMain {
-    margin-top: 120px;
+    margin-top: 70px;
   }
 
   .dinosaurCarousel {
@@ -752,7 +792,7 @@ body {
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 250px;
+    margin-top: 315px;
     height: 650px;
   }
 
@@ -776,6 +816,12 @@ body {
   }
 
 /* About Us Section */
+  .aboutUsTopGrid {
+    margin-left: 45px;
+    margin-right: 45px;
+    grid-template-rows: 250px 500px 100px;
+  }
+
   .aboutUsHead {
     font-size: 3rem;
   }
@@ -786,6 +832,8 @@ body {
 
   .aboutUsContent {
     margin-top: 200px;
+    padding-right: 30%;
+    padding-left: 15%;
   }
 
 /* Footer Section */
@@ -828,8 +876,16 @@ body {
     font-size: 0.6rem;
   }
 
-  #dropdownMenu {
+  #dropdownIcon {
     width: 25px;
+  }
+
+  .dropdown-pages {
+    right: 5%;
+  }
+  
+  .dropdownItem {
+    font-size: 0.7rem;
   }
 
   .openingTitle {
@@ -892,7 +948,7 @@ body {
   }
 
   .dinosaurCarousel {
-    padding-top: 70px;
+    padding-top: 30px;
   }
 
   .arrow {
@@ -910,7 +966,7 @@ body {
 /* Palaeontology Section */
   .palaeontologySection {
     height: 500px;
-    margin-top: 115px;
+    margin-top: 210px;
   }
 
   .palaeoHead {
@@ -943,7 +999,7 @@ body {
 
   .aboutUsTopGrid {
     grid-template-columns: 2fr 1fr 3fr;
-    grid-template-rows: 250px 500px;
+    grid-template-rows: 250px 470px;
     margin-left: 35px;
     margin-right: 35px;
   }
@@ -1016,11 +1072,32 @@ body {
   }
 
   .languages {
-    display: none;
+    font-size: 0.7rem;
   }
 
-  #dropdownMenu {
+  #changeLanguage {
+    padding-right: 20px;
+  }
+
+  .dropdown-languages {
+    min-width: 80px;
+  }
+
+  .translate {
+    font-size: 0.5rem;
+  }
+
+  #dropdownIcon {
     width: 15px;
+  }
+
+  .dropdown-pages {
+    min-width: 130px;
+    right: 6%;
+  }
+
+  .dropdownItem {
+    font-size: 0.5rem;
   }
 
   .openingTitle {
@@ -1063,6 +1140,10 @@ body {
   }
 
 /* Carousel Section */
+  .carouselMain {
+    margin-top: 20px;
+  }
+
   .carouselHead {
     font-size: 1.5rem;
   }
@@ -1087,7 +1168,7 @@ body {
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 60px;
+    margin-top: 70px;
     height: 300px;
   }
 
@@ -1112,7 +1193,7 @@ body {
 
 /* About Us Section */
   .aboutUsTopGrid {
-    grid-template-rows: 150px 450px;
+    grid-template-rows: 100px 370px;
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -1133,6 +1214,7 @@ body {
   .aboutUsContent {
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 100px;
   }
 
   .brachiosaurus {
@@ -1193,11 +1275,7 @@ body {
     width: 20px;
   }
 
-  .languages {
-    display: none;
-  }
-
-  #dropdownMenu {
+  #dropdownIcon {
     width: 15px;
   }
 
@@ -1290,7 +1368,7 @@ body {
 
 /* About Us Section */
   .aboutUsTopGrid {
-    grid-template-rows: 150px 420px;
+    grid-template-rows: 100px 350px;
     margin-left: 20px;
     margin-right: 20px;
   }
