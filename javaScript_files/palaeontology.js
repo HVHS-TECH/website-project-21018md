@@ -18,6 +18,10 @@ var whatDescription = document.getElementById("whatDescription");
 var whyTitle = document.getElementById("whyTitle");
 var whyDescription = document.getElementById("whyDescription");
 
+var homeMenu = document.getElementById("goHome");
+var selectMenu = document.getElementById("goSelect");
+var palaeoMenu = document.getElementById("goPalaeo");
+
 /*****************************************************/
 
 function saveLanguage() {
@@ -36,6 +40,10 @@ function english() {
 
     // Navigation section
     languages.textContent = "English";
+
+    homeMenu.textContent = "Home";
+    selectMenu.textContent = "Dinosaurs";
+    palaeoMenu.textContent = "Palaeontology";
 
     // Information section
     whatTitle.textContent = "What is it?";
@@ -59,6 +67,10 @@ function japanese() {
 
     // Navigation Section
     languages.textContent = "日本語";
+
+    homeMenu.textContent = "ホームページ";
+    selectMenu.textContent = "恐竜のページ";
+    palaeoMenu.textContent = "古生物学のページ";
 
     // Information section
     whatTitle.textContent = "古生物学とは何ですか？";

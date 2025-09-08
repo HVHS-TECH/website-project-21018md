@@ -30,6 +30,10 @@ var tricera = document.getElementById("tricera_img");
 var diplo = document.getElementById("diplo_img");
 var ankylo = document.getElementById("ankylo_img");
 
+var homeMenu = document.getElementById("goHome");
+var selectMenu = document.getElementById("goSelect");
+var palaeoMenu = document.getElementById("goPalaeo");
+
 /*****************************************************/
 
 function saveLanguage() {
@@ -48,6 +52,10 @@ function english() {
 
     // Navigation section
     languages.textContent = "English";
+
+    homeMenu.textContent = "Home";
+    selectMenu.textContent = "Dinosaurs";
+    palaeoMenu.textContent = "Palaeontology";
 
     // Landing section
     pageHeadTop.style.display = "block";
@@ -78,6 +86,10 @@ function japanese() {
 
     // Navigation Section
     languages.textContent = "日本語";
+
+    homeMenu.textContent = "ホームページ";
+    selectMenu.textContent = "恐竜のページ";
+    palaeoMenu.textContent = "古生物学のページ";
 
     // Landing section
     pageHeadTop.style.display = "none";
