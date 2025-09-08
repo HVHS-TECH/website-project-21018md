@@ -39,6 +39,10 @@ var tricera = document.getElementById("tricera_img");
 var diplo = document.getElementById("diplo_img");
 var ankylo = document.getElementById("ankylo_img");
 
+var homeMenu = document.getElementById("goHome");
+var selectMenu = document.getElementById("goSelect");
+var palaeoMenu = document.getElementById("goPalaeo");
+
 /*****************************************************/
 // Translation feature
 /*****************************************************/
@@ -62,6 +66,10 @@ function english() {
     titleBottom.textContent = "PREHISTORIC WORLD";
     openingInfo.textContent = "Travel back to a time long before humans, filled with bizarre creatures and vast landscapes - welcome to the age of dinosaurs!";
     languages.textContent = "English";
+
+    homeMenu.textContent = "Home";
+    selectMenu.textContent = "Dinosaurs";
+    palaeoMenu.textContent = "Palaeontology";
 
     // Dinosaur section
     dinoHead.textContent = "THE TITANS";
@@ -105,6 +113,10 @@ function japanese() {
     titleBottom.textContent = "先史時代の世界へ";
     openingInfo.textContent = "人類誕生以前の奇妙な生き物や広大な風景に満ちた時代へ旅立ちましょう。恐竜の時代へようこそ!";
     languages.textContent = "日本語";
+
+    homeMenu.textContent = "ホームページ";
+    selectMenu.textContent = "恐竜のページ";
+    palaeoMenu.textContent = "古生物学のページ";
 
     // Dinosaur section
     dinoHead.textContent = "タイタンズ";

@@ -320,3 +320,116 @@ body {
 .footerDinoLinks li, .footerPalaeoLinks li {
   padding-top: 25px;
 }
+
+/*************************************************************************************/
+/* Media Queries */
+/*************************************************************************************/
+
+@media screen and (max-width: 360px) {
+/* Navigation Section*/
+  .navigation, .title, .footerMain {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .webName {
+    font-size: 0.7rem;
+    margin-left: 0.2rem;
+  }
+
+  #thesaurus {
+    width: 20px;
+  }
+
+  #dropdownIcon {
+    width: 15px;
+  }
+
+  .languages {
+    font-size: 0.7rem;
+  }
+
+  #changeLanguage {
+    padding-right: 20px;
+  }
+
+  .dropdown-languages {
+    min-width: 80px;
+  }
+
+  .translate {
+    font-size: 0.5rem;
+  }
+
+  #dropdownIcon {
+    width: 15px;
+  }
+
+  .dropdown-pages {
+    min-width: 130px;
+    right: 6%;
+  }
+
+  .dropdownItem {
+    font-size: 0.5rem;
+  }
+
+/* Landing Section */
+  #pageHeadTop {
+    font-size: 1rem;
+  }
+
+  #pageHeadBottom {
+    font-size: 3rem;
+  }
+
+/* Dinosaur section */
+  .dinosaurBoxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 100px 10px 0px 10px;
+  }
+
+  .dinosaurBoxes h2 {
+    font-size: 1.2rem;
+    margin-top: 40px;
+  }
+
+  .dinoBox {
+    width: 18rem;
+    height: 18rem;
+  }
+
+/*Footer Section */
+  .footerDinoLinks, .footerPalaeoLinks {
+    display: none;
+  }
+
+  .footerHead {
+    margin-top: 50px;
+    font-size: 0.7rem;
+  }
+
+  .social {
+    width: 10%;
+  }
+
+  .footerSection {
+    height: 200px;
+  }
+
+  .footerSocials {
+    grid-area: 1/ 1 / 2 / 2;
+    margin-top: 135px;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .social {
+    width: 20%;
+  }
+
+  #facebook, #instagram, #youtube {
+    margin-right: 20px;
+  }
+}
