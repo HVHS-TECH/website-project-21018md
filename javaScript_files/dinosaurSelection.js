@@ -19,9 +19,8 @@ var triceraLink = document.getElementById("triceraLink");
 var footerPalaeoHead = document.getElementById("footerPalaeoHead");
 var palaeoLinkOne = document.getElementById("palaeoLinkOne");
 var palaeoLinkTwo = document.getElementById("palaeoLinkTwo");
-var pageHeadTop = document.getElementById("pageHeadTop");
-var pageHeadBottom = document.getElementById("pageHeadBottom");
-var titleGrid = document.getElementById("titleGrid");
+var pageHead = document.getElementById("pageHead");
+var pageDescription = document.getElementById("pageDescription");
 
 var pachy = document.getElementById("pachy_img");
 var trex = document.getElementById("trex_img");
@@ -58,9 +57,8 @@ function english() {
     palaeoMenu.textContent = "Palaeontology";
 
     // Landing section
-    pageHeadTop.style.display = "block";
-    titleGrid.style.gridTemplateRows = "1fr 2fr";
-    pageHeadBottom.textContent = "DINOSAURS";
+    pageHead.textContent = "GIANTS OF THE PAST";
+    pageDescription.textContent = "Sizes, weights, and diets. Discover all sorts of different dinosaurs and how each of them lived.";
 
     // Select section
     pachy_h2.textContent = "PACHYCEPHALOSAURUS";
@@ -92,9 +90,8 @@ function japanese() {
     palaeoMenu.textContent = "古生物学のページ";
 
     // Landing section
-    pageHeadTop.style.display = "none";
-    titleGrid.style.gridTemplateRows = "1fr";
-    pageHeadBottom.textContent = "恐竜";
+    pageHead.textContent = "過去の大トカゲ";
+    pageDescription.textContent = "大きさ、重さ、食性。さまざまな種類の恐竜とそれぞれがどのように生きていたかを発見しよう。";
 
     // Select section
     pachy_h2.textContent = "パキケファロサウルス";

@@ -159,15 +159,76 @@ body {
 }
 
 /*************************************************************************************/
+/* Landing Section Styles */
+/*************************************************************************************/
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  margin: 50px 60px 150px 60px
+}
+
+.pageHead {
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  font-weight: 700;
+  text-align: left;
+  font-size: 5rem;
+}
+
+.pageDescription {
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-right: 50%;
+  margin-top: 20px;
+}
+
+.pageHat {
+  border: none;
+  background-color: #00FF64;
+  width: 65%;
+  height: 20px;
+}
+
+/*************************************************************************************/
+/* Images Styles */
+/*************************************************************************************/
+
+#groundBones {
+  width: 100%;
+}
+
+#imgTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#footFossil, #sandBones {
+  width: 80%;
+}
+
+#footFossil {
+  justify-self: end;
+  margin-right: 50px;
+}
+
+#sandBones {
+  justify-self: start;
+  margin-left: 50px;
+}
+
+
+/*************************************************************************************/
 /* What Section Styles */
 /*************************************************************************************/
 
 .whatSection {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 150px;
+  margin: 100px 60px 100px 60px;
 }
 
 .whatTitle {
@@ -175,6 +236,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .whatDescription {
@@ -191,9 +253,7 @@ body {
 .whySection {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 150px;
+  margin: 150px 60px 150px 60px;
 }
 
 .whyTitle {
@@ -201,6 +261,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .whyDescription {
@@ -276,10 +337,12 @@ body {
 
 .social {
   cursor: pointer;
+  transition: transform 0.2s ease;
+  align-self: center;
 }
 
 .social:hover {
-  width: 15%;
+  transform: scale(1.4);
 }
 
 .footerDinoLinks {
@@ -299,3 +362,136 @@ body {
 /*************************************************************************************/
 /* Media Queries */
 /*************************************************************************************/
+@media screen and (max-width: 360px) {
+/* Navigation Section*/
+  .navigation, .title, .footerMain {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .webName {
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+  }
+
+  #thesaurus {
+    width: 35px;
+  }
+
+  .languages {
+    font-size: 0.8rem;
+  }
+
+  #changeLanguage {
+    padding-right: 10px;
+  }
+
+  .dropdown-languages {
+    min-width: 80px;
+  }
+
+  .translate {
+    font-size: 0.5rem;
+  }
+
+  #dropdownIcon {
+    width: 25px;
+  }
+
+  .dropdown-pages {
+    min-width: 130px;
+    right: 6%;
+  }
+
+  .dropdownItem {
+    font-size: 0.5rem;
+  }
+
+/* Landing Section */
+  .title {
+    grid-template-rows: 1fr 3fr 3fr;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .pageHat {
+    width: 85%;
+    height: 15px;
+    margin-bottom: 0px;
+  }
+
+  .pageHead {
+    font-size: 3rem;
+  }
+
+  .pageDescription {
+    font-size: 1rem;
+    margin-right: 10%;
+  }
+
+/* Images */
+  #sandBones {
+    margin-left: 10px;
+  }
+
+  #footFossil {
+    margin-right: 10px;
+  }
+
+/* What Section */
+  .whatSection {
+    margin: 50px 20px 50px 20px;
+  }
+
+  .whatTitle {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+
+  .whatDescription {
+    font-size: 0.7rem;
+  }
+
+/* Why Section */
+  .whySection {
+    margin: 50px 20px 100px 20px;
+  }
+
+  .whyTitle {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+
+  .whyDescription {
+    font-size: 0.7rem;
+}
+
+/* Footer Section */
+  .footerDinoLinks, .footerPalaeoLinks {
+    display: none;
+  }
+
+  .footerSocials {
+    grid-area: 1/ 1 / 2 / 2;
+    margin-top: 135px;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .footerHead {
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+
+  .social {
+    width: 20%;
+  }
+
+  #facebook, #instagram, #youtube {
+    margin-right: 25px;
+  }
+
+  .footerSection {
+    height: 200px;
+  }
+}

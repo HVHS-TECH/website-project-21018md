@@ -86,7 +86,7 @@ function english() {
     ankylo_h2.textContent = "ANKYLOSAURUS";
 
     // Palaeo Section
-    palaeoHead.textContent = "THEIR REMNANTS";
+    palaeoHead.textContent = "THEIR LEGACY";
     palaeoDescription.textContent = "Palaeontology is the study of ancient living organisms through fossils. Fossils are the preserved remains or traces of once-living creatures, such as bones, shells, DNA, or even footprints. Although old, these special rocks have allowed us to see what Earth was like during prehistoric times.";
     palaeoButton.textContent = "LEARN MORE";
 
@@ -119,7 +119,7 @@ function japanese() {
     palaeoMenu.textContent = "古生物学のページ";
 
     // Dinosaur section
-    dinoHead.textContent = "タイタンズ";
+    dinoHead.textContent = "太古の覇権者";
     dinoDescription.textContent = "中生代の間、約2億5千万年前、地球は恐竜と呼ばれる爬虫類のグループによって支配されていました。巨大な爪から小さな歯まで、これらの生物は三畳紀、ジュラ紀、白亜紀にわたって闊歩しました。約6600万年前の小惑星の衝突によって彼らは絶滅しましたが、科学研究により私たちは彼らの世界を少しずつ再発見してきました。";
     dinoSelectButton.textContent = "ページを見る";
 
@@ -133,7 +133,7 @@ function japanese() {
     ankylo_h2.textContent = "アンキロサウルス";
 
     // Palaeo Section
-    palaeoHead.textContent = "その残骸";
+    palaeoHead.textContent = "恐竜の遺産";
     palaeoDescription.textContent = "古生物学は、化石を通じて古代の生物を研究する学問です。化石とは、骨、貝殻、DNA、あるいは足跡など、かつて生きていた生物の保存された残骸や痕跡のことを指します。これらの古い特別な岩石のおかげで、私たちは先史時代の地球がどのようであったかを知ることができるのです。";
     palaeoButton.textContent = "ページを見る";
 

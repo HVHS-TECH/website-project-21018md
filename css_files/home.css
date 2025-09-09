@@ -631,12 +631,12 @@ body {
 
 #facebook, #instagram, #youtube {
   margin-right: 35px;
-  align-self: center;
 }
 
 .social {
   cursor: pointer;
   transition: transform 0.2s ease;
+  align-self: center;
 }
 
 .social:hover {
@@ -1395,9 +1395,6 @@ body {
   }
 
 /* Footer Section */
-  .footerSection {
-    height: 200px;
-  }
 }
 
 @media screen and (max-width: 360px) {

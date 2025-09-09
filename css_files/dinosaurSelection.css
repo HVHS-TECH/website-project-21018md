@@ -165,27 +165,33 @@ body {
 .title {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
-  margin-right: 60px;
-  margin-left: 60px;
+  grid-template-rows: 1fr 2fr 2fr;
+  margin: 50px 60px 0px 60px
 }
 
 .pageHead {
   font-family: "Inter", sans-serif;
   color: #00FF64;
   font-weight: 700;
-  text-align: center;
-  text-decoration: underline;
+  text-align: left;
+  font-size: 5rem;
 }
 
-#pageHeadTop {
-  font-size: 3rem;
+.pageDescription {
+  font-family: "Inter", sans-serif;
+  color: #00FF64;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-right: 50%;
+  margin-top: 20px;
 }
 
-#pageHeadBottom {
-  font-size: 6rem;
+.pageHat {
+  border: none;
+  background-color: #00FF64;
+  width: 65%;
+  height: 20px;
 }
-
 
 /*************************************************************************************/
 /* Select Section Styles */
@@ -195,7 +201,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 200px 30px 200px 30px;
+  margin: 150px 30px 150px 30px;
 }
 
 .dinosaurBoxes h2 {
@@ -302,10 +308,12 @@ body {
 
 .social {
   cursor: pointer;
+  transition: transform 0.2s ease;
+  align-self: center;
 }
 
 .social:hover {
-  width: 15%;
+  transform: scale(1.4);
 }
 
 .footerDinoLinks {
@@ -329,29 +337,25 @@ body {
 @media screen and (max-width: 360px) {
 /* Navigation Section*/
   .navigation, .title, .footerMain {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .webName {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     margin-left: 0.2rem;
   }
 
   #thesaurus {
-    width: 20px;
-  }
-
-  #dropdownIcon {
-    width: 15px;
+    width: 35px;
   }
 
   .languages {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   #changeLanguage {
-    padding-right: 20px;
+    padding-right: 10px;
   }
 
   .dropdown-languages {
@@ -363,7 +367,7 @@ body {
   }
 
   #dropdownIcon {
-    width: 15px;
+    width: 25px;
   }
 
   .dropdown-pages {
@@ -376,12 +380,24 @@ body {
   }
 
 /* Landing Section */
-  #pageHeadTop {
-    font-size: 1rem;
+  .title {
+    grid-template-rows: 1fr 3fr 2fr;
+    margin-top: 30px;
   }
 
-  #pageHeadBottom {
+  .pageHat {
+    width: 85%;
+    height: 15px;
+    margin-bottom: 0px;
+  }
+
+  .pageHead {
     font-size: 3rem;
+  }
+
+  .pageDescription {
+    font-size: 1rem;
+    margin-right: 10%;
   }
 
 /* Dinosaur section */
@@ -406,19 +422,6 @@ body {
     display: none;
   }
 
-  .footerHead {
-    margin-top: 50px;
-    font-size: 0.7rem;
-  }
-
-  .social {
-    width: 10%;
-  }
-
-  .footerSection {
-    height: 200px;
-  }
-
   .footerSocials {
     grid-area: 1/ 1 / 2 / 2;
     margin-top: 135px;
@@ -426,11 +429,20 @@ body {
     align-self: flex-end;
   }
 
+  .footerHead {
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+
   .social {
     width: 20%;
   }
 
   #facebook, #instagram, #youtube {
-    margin-right: 20px;
+    margin-right: 25px;
+  }
+
+  .footerSection {
+    height: 200px;
   }
 }
