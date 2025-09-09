@@ -1081,11 +1081,11 @@ body {
   }
 
   .languages {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   #changeLanguage {
-    padding-right: 20px;
+    padding-right: 15px;
   }
 
   .dropdown-languages {
@@ -1276,6 +1276,10 @@ body {
   }
 
 /* Landing Section*/
+  #changeLanguage {
+    padding-right: 10px;
+  }
+
   .opening {
     grid-template-rows: 2fr 1fr;
   }
@@ -1398,7 +1402,7 @@ body {
 
 @media screen and (max-width: 360px) {
   .palaeontologySection {
-    margin-top: 25px;
+    margin-top: 0px;
   }
 
   h2 {
