@@ -185,7 +185,7 @@ body {
 /*************************************************************************************/
 
 .landingSection {
-  background-image: url("../images_files/dinosaurIMG/land_img.jpg");
+  background-image: url("../images_files/dinosaurIMG/land_imgL.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -688,17 +688,17 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
 /* Margins */
   .navigation, .opening, 
   .aboutUsBottomGrid, .footerMain{
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .dinosaurMain {
-    margin-right: 95px;
-    margin-left: 95px;
+    margin-right: 100px;
+    margin-left: 100px;
   }
 
 /* Landing Section*/ 
@@ -719,6 +719,10 @@ body {
   }
 
   .translate {
+    font-size: 0.7rem;
+  }
+
+  .dropdownItem {
     font-size: 0.7rem;
   }
 
@@ -790,7 +794,7 @@ body {
 
 /* Palaeontology Section */
   .palaeontologySection {
-    margin-top: 315px;
+    margin-top: 340px;
     height: 650px;
   }
 
@@ -835,6 +839,21 @@ body {
   }
 
 /* Footer Section */
+  .footerHead {
+    font-size: 1.3rem;
+  }
+
+  .footerSubHead {
+    font-size: 1rem;
+  }
+
+  .footerLink {
+    font-size: 0.9rem;
+  }
+
+  .social {
+    width: 12%;
+  }
 
 }
 
@@ -848,6 +867,7 @@ body {
 /* Landing Section*/
   .landingSection {
     background-image: url("../images_files/dinosaurIMG/land_imgM.jpg");
+    height: 760px;
   }
 
   .webName {

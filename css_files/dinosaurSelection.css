@@ -446,3 +446,82 @@ body {
     height: 200px;
   }
 }
+
+@media screen and (max-width: 1080px) {
+/* Navigation Section */
+  .navigation, .title, .footerMain {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+/* Landing Section*/ 
+  .webName {
+    font-size: 1.3rem;
+  }
+
+  #thesaurus {
+    width: 48px;
+  }
+
+  .languages {
+    font-size: 1.3rem;
+  }
+
+  .dropdown-languages {
+    min-width: 105px;
+  }
+
+  .translate {
+    font-size: 0.7rem;
+  }
+
+  .dropdownItem {
+    font-size: 0.7rem;
+  }
+
+  .pageHead {
+    font-size: 4rem;
+  }
+
+  .pageDescription {
+    font-size: 1.1rem;
+  }
+
+  .pageHat {
+    width: 70%;
+  }
+
+/* Dinosaur section */
+  .dinoBox {
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .dinosaurBoxes h2 {
+    font-size: 1.2rem;
+  }
+
+  .dinosaurBoxes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+/* Footer Section */
+  .footerHead {
+    font-size: 1.3rem;
+  }
+
+  .footerSubHead {
+    font-size: 1rem;
+  }
+
+  .footerLink {
+    font-size: 0.9rem;
+  }
+
+  .social {
+    width: 12%;
+  }
+
+}
+  
