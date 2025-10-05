@@ -346,6 +346,12 @@ body {
   padding-top: 50px;
 }
 
+.dinosaurCarousel::before,
+.dinosaurCarousel::after {
+  content: "";
+  flex: 0 0 40vw;
+}
+
 .dinosaurCarousel:hover .arrow{
   display: block;
 }
