@@ -193,6 +193,10 @@ body {
   height: 20px;
 }
 
+#selectBanner {
+  width: 100%;
+}
+
 /*************************************************************************************/
 /* Select Section Styles */
 /*************************************************************************************/
@@ -201,7 +205,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 150px 30px 150px 30px;
+  margin: 100px 30px 100px 30px;
 }
 
 .dinosaurBoxes h2 {
@@ -282,7 +286,7 @@ body {
 
 .footerLink {
   font-family: "Inter", sans-serif;
-  color: #457477;
+  color: #2E3E40;
   font-size: 1rem;
   text-decoration: none;
 }

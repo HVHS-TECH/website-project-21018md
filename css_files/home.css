@@ -374,12 +374,6 @@ body {
   display: none;
 }
 
-.dinosaurCarousel::before,
-.dinosaurCarousel::after {
-  content: "";
-  flex: 0 0 40vw;
-}
-
 .carouselIMG {
   width: 100%;
   padding: 10px;
@@ -609,7 +603,7 @@ body {
 
 .footerLink {
   font-family: "Inter", sans-serif;
-  color: #457477;
+  color: #2E3E40;
   font-size: 1rem;
   text-decoration: none;
 }
