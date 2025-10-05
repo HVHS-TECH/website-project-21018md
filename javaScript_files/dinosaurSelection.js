@@ -80,7 +80,7 @@ function english() {
 
 function japanese() {
     console.log("change to japanese");
-    sessionStorage.setItem("currentLanguage", "jap")
+    sessionStorage.setItem("currentLanguage", "jap");
 
     // Navigation Section
     languages.textContent = "日本語";
