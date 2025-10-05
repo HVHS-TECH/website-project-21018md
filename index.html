@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
 
     </head>
-    <body onload="saveLanguage()">
+    <body>
         <!-- Landing Section -->
         <div class="landingSection">
             <nav class="navigation">
@@ -61,7 +61,7 @@
                     <p id="dinoDescription" class="dinoDescription">
                         During the Mesozoic Era, over 250 million years ago, Earth was dominated by a group of reptiles known as dinosaurs. From colossal claws to tiny teeth, these creatures ran amok throughout the Triassic, Jurassic, and Cretaceous periods. After the asteroid caused their extinction approximately 66 million years ago, scientific research has let us slowly rediscover their world.
                     </p>
-                    <button id="dinoSelectButton" class="dinoSelectButton" onclick="window.location='dinosaurSelection.html'">LEARN MORE</button>
+                    <button id="dinoSelectButton" class="dinoSelectButton">LEARN MORE</button>
                 </div>
                 <img class="dinosaurImage" src="./images_files/dinosaurIMG/dinosaur_img.png" alt="A Tyranosaurus Rex walking through a prehistoric forest.">
             </div>
@@ -76,37 +76,37 @@
                 <div class="dinosaurCarousel">
                     <img class="arrow" id="leftArrow" alt="An arrow pointing to the left." src="./images_files/otherVG/left.svg">
                     <div class="pachy">
-                        <div onmouseover="pachyHoverChange()" onmouseout="pachyHoverRevert()" class="dinoCarouselItem">
+                        <div class="dinoCarouselItem">
                             <img id="pachy_img" class="carouselIMG" alt="A Pachycephalosaurus vector graphic" src="./images_files/dinosaursVG/pachy.svg">
                         </div>
                         <h2 id="pachy_h2" class="dinoName">PACHYCEPHALOSAURUS</h2>
                     </div>
                     <div class="trex">
-                        <div onmouseover="trexHoverChange()" onmouseout="trexHoverRevert()" class="dinoCarouselItem">
+                        <div class="dinoCarouselItem">
                             <img id="trex_img" class="carouselIMG" alt="A Tyranosaurus Rex vector graphic" src="./images_files/dinosaursVG/trex.svg">
                         </div>
                         <h2 id="trex_h2" class="dinoName">TYRANOSAURUS REX</h2>
                     </div>
                     <div class="tricera">
-                        <div onmouseover="triceraHoverChange()" onmouseout="triceraHoverRevert()" class="dinoCarouselItem">
+                        <div class="dinoCarouselItem">
                             <img id="tricera_img" class="carouselIMG" alt="A Triceratops vector graphic" src="./images_files/dinosaursVG/triceratops.svg">
                         </div>
                         <h2 id="tricera_h2" class="dinoName">TRICERATOPS</h2>
                     </div>
                     <div class="raptor">
-                        <div onmouseover="raptorHoverChange()" onmouseout="raptorHoverRevert()" class="dinoCarouselItem">
+                        <div class="dinoCarouselItem">
                             <img id="raptor_img" class="carouselIMG" alt="A Velociraptor vector graphic" src="./images_files/dinosaursVG/raptor.svg">
                         </div>
                         <h2 id="raptor_h2" class="dinoName">VELOCIRAPTOR</h2>
                     </div>
                     <div class="diplo">
-                        <div onmouseover="diploHoverChange()" onmouseout="diploHoverRevert()" class="dinoCarouselItem">
+                        <div class="dinoCarouselItem">
                             <img id="diplo_img" class="carouselIMG" alt="A Diplodocus vector graphic" src="./images_files/dinosaursVG/diplo.svg">
                         </div>
                         <h2 id="diplo_h2" class="dinoName">DIPLIDOCUS</h2>
                     </div>
                     <div class="ankylo">
-                        <div onmouseover="ankyloHoverChange()" onmouseout="ankyloHoverRevert()" class="dinoCarouselItem">
+                        <div class="dinoCarouselItem">
                             <img id="ankylo_img" class="carouselIMG" alt="A Ankylosaurus vector graphic" src="./images_files/dinosaursVG/ankylo.svg">
                         </div>
                         <h2 id="ankylo_h2" class="dinoName">ANKYLOSAURUS</h2>
@@ -136,13 +136,13 @@
         <div class="palaeontologySection">
             <div class="palaeontologyMain">
                 <div class="palaeontologyTitle">
-                    <h1 id="palaeoHead" class="palaeoHead">THEIR LEGACY</h1>
+                    <h1 id="palaeoHead" class="palaeoHead">THEIR REMNANTS</h1>
                 </div>
                 <p id="palaeoDescription" class="palaeoDescription">
                     Palaeontology is the study of ancient living organisms through fossils. Fossils are the preserved remains or traces of once-living creatures, such as bones, shells, DNA, or even footprints. Although old, these special rocks have allowed us to see what Earth was like during prehistoric times.
                 </p>
                 <div class="palaeoButtonContainer">
-                    <button id="palaeoButton" class="palaeoButton" onclick="window.location='palaeontology.html'">LEARN MORE</button>
+                    <button id="palaeoButton" class="palaeoButton">LEARN MORE</button>
                 </div>
             </div>
         </div>

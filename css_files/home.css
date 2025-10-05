@@ -132,7 +132,7 @@ body {
 }
 
 .languagesButton:hover .dropdown-languages{
-  display: block;
+  display: none;
 }
 
 .dropdownMenu {
@@ -172,7 +172,7 @@ body {
 }
 
 .dropdownButton:hover .dropdown-pages{
-  display: block;
+  display: none;
 }
 
 .navItem {
@@ -274,12 +274,6 @@ body {
   cursor: pointer;
   margin-top: 50px;
   letter-spacing: 1px;
-  transition: transform 0.2s ease;
-}
-
-.dinoSelectButton:hover {
-  background-color: white;
-  transform: scale(1.1);
 }
 
 .dinosaurImage {
@@ -360,14 +354,7 @@ body {
   flex: 0 0 20%;
   height: 25rem;
   width: 25rem;
-  cursor: pointer;
-  transition: transform 0.2s ease;
   align-content: center;
-}
-
-.dinoCarouselItem:hover {
-  background-color: white;
-  transform: scale(1.1);
 }
 
 .dinosaurCarousel::-webkit-scrollbar {
@@ -458,12 +445,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 1px;
-  transition: transform 0.2s ease;
-}
-
-.palaeoButton:hover {
-  background-color: white;
-  transform: scale(1.1);
 }
 
 /*************************************************************************************/
@@ -603,7 +584,7 @@ body {
 
 .footerLink {
   font-family: "Inter", sans-serif;
-  color: #2E3E40;
+  color: #47686c;
   font-size: 1rem;
   text-decoration: none;
 }
